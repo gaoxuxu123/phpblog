@@ -1,0 +1,57 @@
+2015-10-12 10:13:23 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'frontend\controllers\Controller' not found' in F:\myapaphe\www\phpblog\frontend\controllers\BlogController.php:6
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): yii\BaseYii::autoload()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::spl_autoload_call()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::class_exists()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(521): yii\base\Module->createControllerByID()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(449): yii\base\Module->createController()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#7 F:\myapaphe\www\phpblog\index.php(20): yii\base\Application->run()
+#8 {main}
+2015-10-12 10:13:23 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'bdshare_firstime' => '1436163386559'
+    '_ga' => 'GA1.1.1897110083.1442914906'
+    'CNZZDATA4639431' => 'cnzz_eid=1841090418-1443488937-&ntime=1443495126'
+    'PHPSESSID' => 'dd4vlgddrbnpftjsu95i482jv3'
+    '_csrf' => '4c718f65e13a52470e950656f59f2b50bfc0a50abf685c449ed4c1cff5ec3a34a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Hl3mkgeXznghykuwAqCriu7ShfvmumxJ\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1436163386559; _ga=GA1.1.1897110083.1442914906; CNZZDATA4639431=cnzz_eid%3D1841090418-1443488937-%26ntime%3D1443495126; PHPSESSID=dd4vlgddrbnpftjsu95i482jv3; _csrf=4c718f65e13a52470e950656f59f2b50bfc0a50abf685c449ed4c1cff5ec3a34a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Hl3mkgeXznghykuwAqCriu7ShfvmumxJ%22%3B%7D'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/index.php'
+    'REMOTE_PORT' => '52080'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/phpblog/'
+    'SCRIPT_NAME' => '/phpblog/index.php'
+    'PHP_SELF' => '/phpblog/index.php'
+    'REQUEST_TIME_FLOAT' => 1444616003.466
+    'REQUEST_TIME' => 1444616003
+]
