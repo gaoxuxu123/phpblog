@@ -23,7 +23,15 @@ return [
           			 				['menuid'=>'8','menuname'=>'Tag标签管理','icon'=>'r3_c14','url'=>'admin.php?r=tag/taglist'],
                                              ['menuid'=>'10','menuname'=>'文章分类管理','icon'=>'r17_c2','url'=>'']
           			 	        ]
-          			 ]
+          			 ],
+                          [
+                              'menuid'=>'11','icon'=>'r3_c17','menuname'=>'任务管理',
+                              'menus'=>[
+                                        ['menuid'=>'12','menuname'=>'任务列表','icon'=>'r2_c10','url'=>'admin.php?r=task/tasklist']
+                                       ]
+
+
+                          ]
                 ]
           ]
 ];

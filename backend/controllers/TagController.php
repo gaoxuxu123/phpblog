@@ -58,7 +58,7 @@ class TagController extends Controller
  		 */
  		public function actionTagadd(){
 
- 			$tagModel	= Tags::getInstance();
+ 			$tagModel			= Tags::getInstance();
  			$tagModel->tagname  = \Yii::$app->request->post('tagname');
  			if($tagModel->save()){
 
@@ -67,5 +67,40 @@ class TagController extends Controller
 
  				Helper::Echo_Json(0,'数据添加失败');
  			}
+ 		}
+ 		/**
+ 		 * 标签删除
+ 		 */
+ 		public function actionTagdelete(){
+
+ 			$ids 	= \Yii::$app->request->post('ids');
+ 			$tids 	= explode(',', $ids);
+ 			$flag  	=Tags::tagsDelete($tids);
+ 			if($flag){
+
+ 				Helper::Echo_Json(1,'数据删除成功');
+ 			}else{
+
+ 				Helper::Echo_Json(0,'数据删除失败');
+ 			}
+ 		}
+ 		/**
+ 		 * 标签导出任务创建
+ 		 */
+ 		public function actionTagexport(){
+
+ 				$taskModel 				= new \common\models\Task();
+ 				$taskModel->taskname 	= 'Tags标签导出';
+ 				$taskModel->createtime 	= time();
+ 				$taskModel->sql         = 'SELECT * FROM '.Tags::tableName();
+ 				$taskModel->status      = '1';
+ 				if($taskModel->save()){
+
+ 					Helper::Echo_Json(1,'队列任务添加成功');
+ 				}else{
+
+ 					Helper::Echo_Json(0,'队列任务添加失败');
+ 				}
+
  		}
 }

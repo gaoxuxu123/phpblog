@@ -12,6 +12,7 @@
                 frozenColumns:[[
                     {   field:'ck',
                         width:80,
+                        
                         formatter: function (value,row,index) {
                             return "<input type=\"checkbox\"  name=\"tids\" value=\"" + row.id + "\" >";
                         },
@@ -35,29 +36,70 @@
                     handler:function(){
                         $('#btnsave').linkbutton('enable');
                          var items = $("input[name='tids']:checked");
-                            
-                        $.messager.alert('消息',items.length);
+                         var len = items.length;
+                         var ids= [];
+                         for (var i = 0; i < len; i++) {
+                                
+                                ids.push(items[i].value);     
+                         };
+
+                          $.messager.confirm('消息','确定删除吗?',function(r){
+
+                                    if(r){
+                                        $.post(
+
+                                                "admin.php?r=tag/tagdelete",
+                                                {
+                                                    ids:ids.join(',')
+                                                },
+                                                function (data){
+
+                                                    if(data.status == 1){
+                                                
+                                                        $.messager.alert('消息', data.content);
+                                                         //防止IE下面url没有变化不刷新的情况
+                                                        var url = $('#table').datagrid('options').url;  
+                                                        if (url.indexOf("_t=") > 0) {  
+                                                            url = url.replace(/_t=\d+/, "_t=" + new Date().getTime());  
+                                                        } else {  
+                                                            url = url.indexOf("?") > 0  
+                                                                ? url + "&_t=" + new Date().getTime()  
+                                                                : url + "?_t=" + new Date().getTime();  
+                                                        }  
+                                                        $('#table').datagrid('reload'); 
+                                                    }else{
+                                                         $.messager.alert('消息', data.content);
+                                                    }
+
+                                                },
+                                            "json"
+                                    );  
+                               }
+
+                          });
+    
                     }
-                },'-',{
-                    id:'btnsave',
-                    text:'修改',
-                    iconCls:'icon-edit',
-                    handler:function(){
-                        $('#btnsave').linkbutton('enable');
-                        $.messager.alert('消息','修改');
-                    }
-                },
+                },'-',
                     {
                         id: 'btnexport',
                         text: '导出',
                         iconCls: 'icon-print',
                         handler: function () {
                             $('#btnsave').linkbutton('enable');
-                            $.messager.alert('消息', '导出');
+                            $.post(
+                                    "admin.php?r=tag/tagexport",
+                                    {},
+                                    function (data){
+
+                                        $.messager.alert('消息',data.content);
+                                    },
+                                    "json"
+                                );
                         }
                     }
                 ]
             });
+
             var p = $('#table').datagrid('getPager');
             $(p).pagination({
                 pageSize: 10,//每页显示的记录条数，默认为10
@@ -70,7 +112,7 @@
                     $(this).pagination('loaded'); //数据加载完毕
                 }
             }); 
-            //tag添加方法
+                      //tag添加方法
             $(".submit").click(function(){
 
                $.post(
@@ -135,14 +177,14 @@
                              },
                             "json"  
                         );
-            		
             }); 
+        
              
 
         });
         function rowformater(value,row,index)
 		 {
-		 	return "<a href='javascript:void(0)' onclick=modify('"+row.id+"','"+row.tagname+"')  class='easyui-linkbutton'  data-options=iconCls:'icon-ok'>修改</a>";
+		 	return "<a href='javascript:void(0)' onclick=modify('"+row.id+"','"+row.tagname+"')  iconCls='icon-search'>修改</a>";
 		 }
 		 function modify(id,tagname){
 
