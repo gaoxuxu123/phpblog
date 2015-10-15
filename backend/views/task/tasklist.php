@@ -35,10 +35,11 @@ AppAsset::addScript($this,WEBPATH.'/scripts/js/task.js');
     <thead>
     <tr>
     	<th data-options="field:'id',align:'center'" width="10%">TaskId</th>
-        <th data-options="field:'taskname',align:'center'" width="40%">任务名称</th>
+        <th data-options="field:'taskname',align:'center'" width="30%">任务名称</th>
+        <th data-options="field:'createtime',align:'center',formatter:timeformater" width="20%">任务创建时间</th>
         <th data-options="field:'status',align:'center',formatter:statusformater" width="10%">任务状态</th>
         <th data-options="field:'download',align:'center',formatter:downformater" width="15%">下载</th>
-        <th data-options="field:'manager',align:'center',formatter:rowformater" width="22%">操作</th>
+        <th data-options="field:'manager',align:'center',formatter:rowformater" width="12%">操作</th>
     </tr>
     </thead>
 </table>

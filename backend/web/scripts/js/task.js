@@ -19,9 +19,42 @@
                     iconCls:'icon-remove',
                     handler:function(){
                         $('#btnsave').linkbutton('enable');
-                        $.messager.alert('消息','删除');
-                    }
-                  }
+                       
+                        $.messager.confirm('消息','确定删除吗?',function(r){
+
+                            if(r){
+                             var ids = [];
+                             var rows = $('#table').datagrid('getSelections');
+                             for(var i=0;i<rows.length;i++){
+                                    ids.push(rows[i].id);
+                                }
+                              $.post(
+                                    "admin.php?r=task/taskdelete",
+                                    {
+                                      ids:ids.join(',')      
+                                    },
+                                    function (data){
+
+                                            $.messager.alert('消息',data.content);
+                                            //防止IE下面url没有变化不刷新的情况
+                                            var url = $('#table').datagrid('options').url;  
+                                            if (url.indexOf("_t=") > 0) {  
+                                                url = url.replace(/_t=\d+/, "_t=" + new Date().getTime());  
+                                            } else {  
+                                                url = url.indexOf("?") > 0  
+                                                    ? url + "&_t=" + new Date().getTime()  
+                                                    : url + "?_t=" + new Date().getTime();  
+                                            }  
+                                            $('#table').datagrid('reload'); 
+                                    },
+                                    "json"
+                                );
+                          }
+
+                        });
+            
+                       }
+                   }
                 ]
             });
             var p = $('#table').datagrid('getPager');
@@ -77,6 +110,12 @@
              return "已完成";
         }
      }
+     function timeformater(value,row,index){
+
+        var timespance = row.createtime;
+        return getLocalTime(timespance);
+
+     }
      function start(id){
 
         $.post(
@@ -100,3 +139,7 @@
 
             $('#table').datagrid('reload');
      }
+     function getLocalTime(nS) {   
+
+       return new Date(parseInt(nS) * 1000).toLocaleString().replace(/年|月/g, "-").replace(/日/g, " ");      
+    } 

@@ -21,7 +21,7 @@ return [
           			 	'menus'=>[
           			 				['menuid'=>'7','menuname'=>'文章列表','icon'=>'r4_c14','url'=>'admin.php?r=article/index'],
           			 				['menuid'=>'8','menuname'=>'Tag标签管理','icon'=>'r3_c14','url'=>'admin.php?r=tag/taglist'],
-                                             ['menuid'=>'10','menuname'=>'文章分类管理','icon'=>'r17_c2','url'=>'']
+                                             ['menuid'=>'10','menuname'=>'文章分类管理','icon'=>'r17_c2','url'=>'admin.php?r=articleclass/index']
           			 	        ]
           			 ],
                           [

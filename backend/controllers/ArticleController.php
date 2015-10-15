@@ -7,6 +7,7 @@ use yii\web\Controller;
 use common\models\Article;
 use common\models\Tags;
 use common\models\Articleclass;
+use common\helpers\Helper;
  class ArticleController extends Controller
  {
  		public $layout = false; //不使用布局
@@ -33,23 +34,44 @@ use common\models\Articleclass;
  		public function actionAddarticledo(){
 
 
-	 				$postdata = \Yii::$app->request->post();
-	 				echo '<pre>';
-	 				print_r($postdata);
- 				
- 				
+	 		  $postdata 	= \Yii::$app->request->post();	 		 
+	 		  $articleModel = Article::getInstance();
+	 		  $articleModel->title = $postdata['title'];
+	 		  $articleModel->tag   = implode(',', $postdata['tag']);
+	 		  $articleModel->content = $_POST['editorValue'];
+	 		  $articleModel->pubtime = time();
+	 		  $articleModel->brief   = $postdata['brief'];
+	 		  $articleModel->classid = $postdata['class'];
+	 		  if($articleModel->save()){
+
+	 		  	echo "<script>alert('操作成功');parent.location.reload();</script>";
+	 		  }
+ 		}
+ 		/**
+ 		 * 文章预览
+ 		 */
+ 		public function actionArticledetail(){
+
+ 			$id = \Yii::$app->request->get('id');
+ 			$articleModel = Article::getInstance();
+ 			$article = $articleModel::findOne($id);
+ 			return $this->render('articledetail',['article'=>$article]);
+
+
  		}
  		//文章列表
- 		public function actionArticlelist(){
+ 		public function actionArticlelistjson(){
 
- 			$articleModel = Article::getInstance();
- 			$list = $articleModel::findAll();
- 			echo '<pre>';
- 			print_r($list);
+ 			$articleModel 	= Article::getInstance();
+ 			$pageIndex  	= \Yii::$app->request->post('page');
+ 			$pageSize   	= \Yii::$app->request->post('rows');
+ 			$page 			= ['pageSize'=>$pageSize,'pageIndex'=>$pageIndex];
+ 			$articleList    = $articleModel::dataPage(null,$page);
+ 			$total 			= $articleModel::dataCount();	
+ 			$json 			= ['total'=>$total,
 
-
+	 					  		'rows'=>$articleList
+	 						   ];
+ 			Helper::Echo_Json(1,$json);	
  		}
-
-
-
 }

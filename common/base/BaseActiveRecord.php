@@ -39,7 +39,7 @@ class BaseActiveRecord extends ActiveRecord{
 			}
 			else{
 
-				// query by primary key
+				// 根据主键查询
 				 $primaryKey = static::primaryKey();
 					if(isset($primaryKey[0]))
 					{
@@ -87,7 +87,7 @@ class BaseActiveRecord extends ActiveRecord{
 		}
 		else
 		{
-			
+			// 根据主键查询
 			$primaryKey = static::primaryKey();
 			if(isset($primaryKey[0]))
 			{
@@ -126,6 +126,7 @@ class BaseActiveRecord extends ActiveRecord{
 	}
 	/**
 	 * 获取总页数
+	 * $where 查询条件数组
 	 */
 	public static function dataCount($where = null){
 
@@ -138,6 +139,38 @@ class BaseActiveRecord extends ActiveRecord{
 				$totalCount = $query->andWhere($where)->count();
 			}
 			return $totalCount;
+	}
+	/**
+	 * 删除方法
+	 * params 
+	 * ids  id 数组 
+	 * $tableName 数据库表名字
+	 */
+	public static function dataDelete($ids = null,$tableName){
+
+
+			if($ids == null){
+
+				return false;
+			}
+			else{
+						$connection = \Yii::$app->db;
+						$len 		= count($ids);
+						$SQL 		= 'DELETE FROM '.$tableName.' WHERE id in (';
+						for ($i = 0; $i<$len;$i++) {
+							
+							$SQL.=$ids[$i];
+							if($i<($len-1)){
+
+								$SQL.=',';
+							}
+						}
+						$SQL.=')';
+						$command 	= $connection->createCommand($SQL);
+						$flag 	 	= $command->execute();
+						return $flag;
+			}
+
 	}
 }	
 

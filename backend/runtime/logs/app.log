@@ -9357,3 +9357,2920 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1444730909.818
     'REQUEST_TIME' => 1444730909
 ]
+2015-10-14 10:12:04 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'Tags' not found' in F:\myapaphe\www\phpblog\backend\controllers\TaskController.php:73
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#6 {main}
+2015-10-14 10:12:04 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'task/taskdo'
+]
+
+$_POST = [
+    'id' => '2'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=task/tasklist'
+    'CONTENT_LENGTH' => '4'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '51086'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=task/taskdo'
+    'REQUEST_URI' => '/phpblog/admin.php?r=task/taskdo'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444788724.279
+    'REQUEST_TIME' => 1444788724
+]
+2015-10-14 10:12:31 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'Tags' not found' in F:\myapaphe\www\phpblog\backend\controllers\TaskController.php:73
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#6 {main}
+2015-10-14 10:12:31 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'task/taskdo'
+]
+
+$_POST = [
+    'id' => '2'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=task/tasklist'
+    'CONTENT_LENGTH' => '4'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '51628'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=task/taskdo'
+    'REQUEST_URI' => '/phpblog/admin.php?r=task/taskdo'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444788751.706
+    'REQUEST_TIME' => 1444788751
+]
+2015-10-14 10:14:08 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$cmodel' (T_VARIABLE), expecting identifier (T_STRING)' in F:\myapaphe\www\phpblog\backend\controllers\TaskController.php:73
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::spl_autoload_call()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::class_exists()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(521): yii\base\Module->createControllerByID()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(449): yii\base\Module->createController()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#7 {main}
+2015-10-14 10:14:08 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'task/tasklistjson'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '10'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=task/tasklist'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '51648'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=task/tasklistjson'
+    'REQUEST_URI' => '/phpblog/admin.php?r=task/tasklistjson'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444788848.621
+    'REQUEST_TIME' => 1444788848
+]
+2015-10-14 10:14:12 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$cmodel' (T_VARIABLE), expecting identifier (T_STRING)' in F:\myapaphe\www\phpblog\backend\controllers\TaskController.php:73
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::spl_autoload_call()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::class_exists()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(521): yii\base\Module->createControllerByID()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(449): yii\base\Module->createController()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#7 {main}
+2015-10-14 10:14:12 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'task/tasklistjson'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '10'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=task/tasklist'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '51715'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=task/tasklistjson'
+    'REQUEST_URI' => '/phpblog/admin.php?r=task/tasklistjson'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444788852.009
+    'REQUEST_TIME' => 1444788852
+]
+2015-10-14 10:14:13 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$cmodel' (T_VARIABLE), expecting identifier (T_STRING)' in F:\myapaphe\www\phpblog\backend\controllers\TaskController.php:73
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::spl_autoload_call()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::class_exists()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(521): yii\base\Module->createControllerByID()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(449): yii\base\Module->createController()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#7 {main}
+2015-10-14 10:14:13 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'task/tasklistjson'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '10'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=task/tasklist'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '51716'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=task/tasklistjson'
+    'REQUEST_URI' => '/phpblog/admin.php?r=task/tasklistjson'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444788853.619
+    'REQUEST_TIME' => 1444788853
+]
+2015-10-14 10:14:16 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$cmodel' (T_VARIABLE), expecting identifier (T_STRING)' in F:\myapaphe\www\phpblog\backend\controllers\TaskController.php:73
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::spl_autoload_call()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::class_exists()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(521): yii\base\Module->createControllerByID()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(449): yii\base\Module->createController()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#7 {main}
+2015-10-14 10:14:16 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'task/tasklist'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '51719'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=task/tasklist'
+    'REQUEST_URI' => '/phpblog/admin.php?r=task/tasklist'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444788856.219
+    'REQUEST_TIME' => 1444788856
+]
+2015-10-14 10:14:18 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$cmodel' (T_VARIABLE), expecting identifier (T_STRING)' in F:\myapaphe\www\phpblog\backend\controllers\TaskController.php:73
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::spl_autoload_call()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::class_exists()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(521): yii\base\Module->createControllerByID()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(449): yii\base\Module->createController()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#7 {main}
+2015-10-14 10:14:18 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'task/tasklistjson'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '10'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=task/tasklist'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '51720'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=task/tasklistjson'
+    'REQUEST_URI' => '/phpblog/admin.php?r=task/tasklistjson'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444788858.621
+    'REQUEST_TIME' => 1444788858
+]
+2015-10-14 10:14:23 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$cmodel' (T_VARIABLE), expecting identifier (T_STRING)' in F:\myapaphe\www\phpblog\backend\controllers\TaskController.php:73
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::spl_autoload_call()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::class_exists()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(521): yii\base\Module->createControllerByID()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(449): yii\base\Module->createController()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#7 {main}
+2015-10-14 10:14:23 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'task/tasklistjson'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '10'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=task/tasklist'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '51721'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=task/tasklistjson'
+    'REQUEST_URI' => '/phpblog/admin.php?r=task/tasklistjson'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444788863.641
+    'REQUEST_TIME' => 1444788863
+]
+2015-10-14 10:14:28 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$cmodel' (T_VARIABLE), expecting identifier (T_STRING)' in F:\myapaphe\www\phpblog\backend\controllers\TaskController.php:73
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::spl_autoload_call()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::class_exists()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(521): yii\base\Module->createControllerByID()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(449): yii\base\Module->createController()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#7 {main}
+2015-10-14 10:14:28 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'task/tasklistjson'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '10'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=task/tasklist'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '51723'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=task/tasklistjson'
+    'REQUEST_URI' => '/phpblog/admin.php?r=task/tasklistjson'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444788868.646
+    'REQUEST_TIME' => 1444788868
+]
+2015-10-14 10:14:33 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$cmodel' (T_VARIABLE), expecting identifier (T_STRING)' in F:\myapaphe\www\phpblog\backend\controllers\TaskController.php:73
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::spl_autoload_call()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::class_exists()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(521): yii\base\Module->createControllerByID()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(449): yii\base\Module->createController()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#7 {main}
+2015-10-14 10:14:33 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'task/tasklistjson'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '10'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=task/tasklist'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '51724'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=task/tasklistjson'
+    'REQUEST_URI' => '/phpblog/admin.php?r=task/tasklistjson'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444788873.648
+    'REQUEST_TIME' => 1444788873
+]
+2015-10-14 10:14:38 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$cmodel' (T_VARIABLE), expecting identifier (T_STRING)' in F:\myapaphe\www\phpblog\backend\controllers\TaskController.php:73
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::spl_autoload_call()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::class_exists()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(521): yii\base\Module->createControllerByID()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(449): yii\base\Module->createController()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#7 {main}
+2015-10-14 10:14:38 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'task/tasklistjson'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '10'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=task/tasklist'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '51725'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=task/tasklistjson'
+    'REQUEST_URI' => '/phpblog/admin.php?r=task/tasklistjson'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444788878.613
+    'REQUEST_TIME' => 1444788878
+]
+2015-10-14 10:14:43 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$cmodel' (T_VARIABLE), expecting identifier (T_STRING)' in F:\myapaphe\www\phpblog\backend\controllers\TaskController.php:73
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::spl_autoload_call()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::class_exists()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(521): yii\base\Module->createControllerByID()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(449): yii\base\Module->createController()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#7 {main}
+2015-10-14 10:14:43 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'task/tasklistjson'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '10'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=task/tasklist'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '51727'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=task/tasklistjson'
+    'REQUEST_URI' => '/phpblog/admin.php?r=task/tasklistjson'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444788883.631
+    'REQUEST_TIME' => 1444788883
+]
+2015-10-14 10:14:48 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$cmodel' (T_VARIABLE), expecting identifier (T_STRING)' in F:\myapaphe\www\phpblog\backend\controllers\TaskController.php:73
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::spl_autoload_call()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::class_exists()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(521): yii\base\Module->createControllerByID()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(449): yii\base\Module->createController()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#7 {main}
+2015-10-14 10:14:48 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'task/tasklistjson'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '10'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=task/tasklist'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '51728'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=task/tasklistjson'
+    'REQUEST_URI' => '/phpblog/admin.php?r=task/tasklistjson'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444788888.621
+    'REQUEST_TIME' => 1444788888
+]
+2015-10-14 10:14:53 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$cmodel' (T_VARIABLE), expecting identifier (T_STRING)' in F:\myapaphe\www\phpblog\backend\controllers\TaskController.php:73
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::spl_autoload_call()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::class_exists()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(521): yii\base\Module->createControllerByID()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(449): yii\base\Module->createController()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#7 {main}
+2015-10-14 10:14:53 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'task/tasklistjson'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '10'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=task/tasklist'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '51729'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=task/tasklistjson'
+    'REQUEST_URI' => '/phpblog/admin.php?r=task/tasklistjson'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444788893.63
+    'REQUEST_TIME' => 1444788893
+]
+2015-10-14 10:14:58 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$cmodel' (T_VARIABLE), expecting identifier (T_STRING)' in F:\myapaphe\www\phpblog\backend\controllers\TaskController.php:73
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::spl_autoload_call()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::class_exists()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(521): yii\base\Module->createControllerByID()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(449): yii\base\Module->createController()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#7 {main}
+2015-10-14 10:14:58 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'task/tasklistjson'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '10'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=task/tasklist'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '51730'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=task/tasklistjson'
+    'REQUEST_URI' => '/phpblog/admin.php?r=task/tasklistjson'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444788898.633
+    'REQUEST_TIME' => 1444788898
+]
+2015-10-14 10:15:03 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$cmodel' (T_VARIABLE), expecting identifier (T_STRING)' in F:\myapaphe\www\phpblog\backend\controllers\TaskController.php:73
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::spl_autoload_call()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::class_exists()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(521): yii\base\Module->createControllerByID()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(449): yii\base\Module->createController()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#7 {main}
+2015-10-14 10:15:03 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'task/tasklistjson'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '10'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=task/tasklist'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '51731'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=task/tasklistjson'
+    'REQUEST_URI' => '/phpblog/admin.php?r=task/tasklistjson'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444788903.647
+    'REQUEST_TIME' => 1444788903
+]
+2015-10-14 10:15:08 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$cmodel' (T_VARIABLE), expecting identifier (T_STRING)' in F:\myapaphe\www\phpblog\backend\controllers\TaskController.php:73
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::spl_autoload_call()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::class_exists()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(521): yii\base\Module->createControllerByID()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(449): yii\base\Module->createController()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#7 {main}
+2015-10-14 10:15:08 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'task/tasklistjson'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '10'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=task/tasklist'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '51732'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=task/tasklistjson'
+    'REQUEST_URI' => '/phpblog/admin.php?r=task/tasklistjson'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444788908.623
+    'REQUEST_TIME' => 1444788908
+]
+2015-10-14 10:15:13 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$cmodel' (T_VARIABLE), expecting identifier (T_STRING)' in F:\myapaphe\www\phpblog\backend\controllers\TaskController.php:73
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::spl_autoload_call()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::class_exists()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(521): yii\base\Module->createControllerByID()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(449): yii\base\Module->createController()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#7 {main}
+2015-10-14 10:15:13 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'task/tasklistjson'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '10'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=task/tasklist'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '51733'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=task/tasklistjson'
+    'REQUEST_URI' => '/phpblog/admin.php?r=task/tasklistjson'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444788913.628
+    'REQUEST_TIME' => 1444788913
+]
+2015-10-14 10:15:18 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$cmodel' (T_VARIABLE), expecting identifier (T_STRING)' in F:\myapaphe\www\phpblog\backend\controllers\TaskController.php:73
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::spl_autoload_call()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::class_exists()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(521): yii\base\Module->createControllerByID()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(449): yii\base\Module->createController()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#7 {main}
+2015-10-14 10:15:18 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'task/tasklistjson'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '10'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=task/tasklist'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '51735'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=task/tasklistjson'
+    'REQUEST_URI' => '/phpblog/admin.php?r=task/tasklistjson'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444788918.632
+    'REQUEST_TIME' => 1444788918
+]
+2015-10-14 11:08:49 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\Helper' not found' in F:\myapaphe\www\phpblog\backend\controllers\ArticleclassController.php:40
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#6 {main}
+2015-10-14 11:08:49 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'articleclass/articleclasslistjson'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '10'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=articleclass/index'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '53015'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=articleclass/articleclasslistjson'
+    'REQUEST_URI' => '/phpblog/admin.php?r=articleclass/articleclasslistjson'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444792129.534
+    'REQUEST_TIME' => 1444792129
+]
+2015-10-14 11:09:10 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\Helper' not found' in F:\myapaphe\www\phpblog\backend\controllers\ArticleclassController.php:40
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#6 {main}
+2015-10-14 11:09:09 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'articleclass/articleclasslistjson'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '10'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=articleclass'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '53027'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=articleclass/articleclasslistjson'
+    'REQUEST_URI' => '/phpblog/admin.php?r=articleclass/articleclasslistjson'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444792149.992
+    'REQUEST_TIME' => 1444792149
+]
+2015-10-14 11:09:20 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\Helper' not found' in F:\myapaphe\www\phpblog\backend\controllers\ArticleclassController.php:40
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#6 {main}
+2015-10-14 11:09:20 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'articleclass/articleclasslistjson'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '10'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=articleclass'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '53029'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=articleclass/articleclasslistjson'
+    'REQUEST_URI' => '/phpblog/admin.php?r=articleclass/articleclasslistjson'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444792160.532
+    'REQUEST_TIME' => 1444792160
+]
+2015-10-14 11:19:47 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: common\models\Task::sql' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\BaseActiveRecord.php(246): yii\base\Component->__get('sql')
+#1 F:\myapaphe\www\phpblog\backend\controllers\TaskController.php(74): yii\db\BaseActiveRecord->__get('sql')
+#2 [internal function]: backend\controllers\TaskController->actionTaskdo()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('taskdo', Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('task/taskdo', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#9 {main}
+2015-10-14 11:19:47 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'task/taskdo'
+]
+
+$_POST = [
+    'id' => '3'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=task/tasklist'
+    'CONTENT_LENGTH' => '4'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '53160'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=task/taskdo'
+    'REQUEST_URI' => '/phpblog/admin.php?r=task/taskdo'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444792787.749
+    'REQUEST_TIME' => 1444792787
+]
+2015-10-14 11:20:27 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: common\models\Task::sql' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\BaseActiveRecord.php(246): yii\base\Component->__get('sql')
+#1 F:\myapaphe\www\phpblog\backend\controllers\TaskController.php(74): yii\db\BaseActiveRecord->__get('sql')
+#2 [internal function]: backend\controllers\TaskController->actionTaskdo()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('taskdo', Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('task/taskdo', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#9 {main}
+2015-10-14 11:20:27 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'task/taskdo'
+]
+
+$_POST = [
+    'id' => '3'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=task/tasklist'
+    'CONTENT_LENGTH' => '4'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '53167'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=task/taskdo'
+    'REQUEST_URI' => '/phpblog/admin.php?r=task/taskdo'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444792827.266
+    'REQUEST_TIME' => 1444792827
+]
+2015-10-14 11:53:30 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: common\models\Articleclass::tagname' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\BaseActiveRecord.php(266): yii\base\Component->__set('tagname', NULL)
+#1 F:\myapaphe\www\phpblog\backend\controllers\ArticleclassController.php(50): yii\db\BaseActiveRecord->__set('tagname', NULL)
+#2 [internal function]: backend\controllers\ArticleclassController->actionArticleclassadd()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('articleclassadd', Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('articleclass/ar...', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#9 {main}
+2015-10-14 11:53:30 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'articleclass/articleclassadd'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=articleclass/index'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'CONTENT_LENGTH' => '0'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '53793'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=articleclass/articleclassadd'
+    'REQUEST_URI' => '/phpblog/admin.php?r=articleclass/articleclassadd'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444794810.075
+    'REQUEST_TIME' => 1444794810
+]
+2015-10-14 11:55:38 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: common\models\Articleclass::tagname' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\BaseActiveRecord.php(266): yii\base\Component->__set('tagname', 'JAVA\xE8\xAF\xAD\xE8\xA8\x80')
+#1 F:\myapaphe\www\phpblog\backend\controllers\ArticleclassController.php(50): yii\db\BaseActiveRecord->__set('tagname', 'JAVA\xE8\xAF\xAD\xE8\xA8\x80')
+#2 [internal function]: backend\controllers\ArticleclassController->actionArticleclassadd()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('articleclassadd', Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('articleclass/ar...', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#9 {main}
+2015-10-14 11:55:38 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'articleclass/articleclassadd'
+]
+
+$_POST = [
+    'classname' => 'JAVA语言'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=articleclass/index'
+    'CONTENT_LENGTH' => '32'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '53816'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=articleclass/articleclassadd'
+    'REQUEST_URI' => '/phpblog/admin.php?r=articleclass/articleclassadd'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444794938.467
+    'REQUEST_TIME' => 1444794938
+]
+2015-10-14 11:56:05 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: common\models\Articleclass::tagname' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\BaseActiveRecord.php(266): yii\base\Component->__set('tagname', 'JAVA\xE8\xAF\xAD\xE8\xA8\x80')
+#1 F:\myapaphe\www\phpblog\backend\controllers\ArticleclassController.php(50): yii\db\BaseActiveRecord->__set('tagname', 'JAVA\xE8\xAF\xAD\xE8\xA8\x80')
+#2 [internal function]: backend\controllers\ArticleclassController->actionArticleclassadd()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('articleclassadd', Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('articleclass/ar...', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#9 {main}
+2015-10-14 11:56:04 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'articleclass/articleclassadd'
+]
+
+$_POST = [
+    'classname' => 'JAVA语言'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=articleclass'
+    'CONTENT_LENGTH' => '32'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '53834'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=articleclass/articleclassadd'
+    'REQUEST_URI' => '/phpblog/admin.php?r=articleclass/articleclassadd'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444794964.972
+    'REQUEST_TIME' => 1444794964
+]
+2015-10-14 14:04:55 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'explode() expects parameter 2 to be string, array given' in F:\myapaphe\www\phpblog\backend\controllers\ArticleclassController.php:82
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): backend\controllers\ArticleclassController->actionArticleclassdelete()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#7 {main}
+2015-10-14 14:04:54 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'articleclass/articleclassdelete'
+]
+
+$_POST = [
+    'ids' => [
+        0 => '8'
+    ]
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=articleclass/index'
+    'CONTENT_LENGTH' => '11'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '55697'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=articleclass/articleclassdelete'
+    'REQUEST_URI' => '/phpblog/admin.php?r=articleclass/articleclassdelete'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444802694.982
+    'REQUEST_TIME' => 1444802694
+]
+2015-10-14 14:05:08 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'explode() expects parameter 2 to be string, array given' in F:\myapaphe\www\phpblog\backend\controllers\ArticleclassController.php:82
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): backend\controllers\ArticleclassController->actionArticleclassdelete()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#7 {main}
+2015-10-14 14:05:08 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'articleclass/articleclassdelete'
+]
+
+$_POST = [
+    'ids' => [
+        0 => '8'
+    ]
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=articleclass'
+    'CONTENT_LENGTH' => '11'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '55714'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=articleclass/articleclassdelete'
+    'REQUEST_URI' => '/phpblog/admin.php?r=articleclass/articleclassdelete'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444802708.241
+    'REQUEST_TIME' => 1444802708
+]
+2015-10-14 15:25:36 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '}'' in F:\myapaphe\www\phpblog\backend\controllers\ArticleController.php:46
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::spl_autoload_call()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::class_exists()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(521): yii\base\Module->createControllerByID()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(449): yii\base\Module->createController()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#7 {main}
+2015-10-14 15:25:36 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'article/index'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1436163386559'
+    '_ga' => 'GA1.1.1897110083.1442914906'
+    'CNZZDATA4639431' => 'cnzz_eid=1841090418-1443488937-&ntime=1443495126'
+    'PHPSESSID' => 'dd4vlgddrbnpftjsu95i482jv3'
+    '_csrf' => '4c718f65e13a52470e950656f59f2b50bfc0a50abf685c449ed4c1cff5ec3a34a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Hl3mkgeXznghykuwAqCriu7ShfvmumxJ\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1436163386559; _ga=GA1.1.1897110083.1442914906; CNZZDATA4639431=cnzz_eid%3D1841090418-1443488937-%26ntime%3D1443495126; PHPSESSID=dd4vlgddrbnpftjsu95i482jv3; _csrf=4c718f65e13a52470e950656f59f2b50bfc0a50abf685c449ed4c1cff5ec3a34a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Hl3mkgeXznghykuwAqCriu7ShfvmumxJ%22%3B%7D'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '57775'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=article/index'
+    'REQUEST_URI' => '/phpblog/admin.php?r=article/index'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444807536.875
+    'REQUEST_TIME' => 1444807536
+]
+2015-10-14 15:53:43 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: tagsList' in F:\myapaphe\www\phpblog\backend\controllers\ArticleController.php:61
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#6 {main}
+2015-10-14 15:53:43 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'article/articlelistjson'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '10'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1436163386559'
+    '_ga' => 'GA1.1.1897110083.1442914906'
+    'CNZZDATA4639431' => 'cnzz_eid=1841090418-1443488937-&ntime=1443495126'
+    'PHPSESSID' => 'dd4vlgddrbnpftjsu95i482jv3'
+    '_csrf' => '4c718f65e13a52470e950656f59f2b50bfc0a50abf685c449ed4c1cff5ec3a34a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Hl3mkgeXznghykuwAqCriu7ShfvmumxJ\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=article/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1436163386559; _ga=GA1.1.1897110083.1442914906; CNZZDATA4639431=cnzz_eid%3D1841090418-1443488937-%26ntime%3D1443495126; PHPSESSID=dd4vlgddrbnpftjsu95i482jv3; _csrf=4c718f65e13a52470e950656f59f2b50bfc0a50abf685c449ed4c1cff5ec3a34a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Hl3mkgeXznghykuwAqCriu7ShfvmumxJ%22%3B%7D'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '58167'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=article/articlelistjson'
+    'REQUEST_URI' => '/phpblog/admin.php?r=article/articlelistjson'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444809223.153
+    'REQUEST_TIME' => 1444809223
+]
+2015-10-14 15:53:46 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: tagsList' in F:\myapaphe\www\phpblog\backend\controllers\ArticleController.php:61
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#6 {main}
+2015-10-14 15:53:46 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'article/articlelistjson'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '10'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1436163386559'
+    '_ga' => 'GA1.1.1897110083.1442914906'
+    'CNZZDATA4639431' => 'cnzz_eid=1841090418-1443488937-&ntime=1443495126'
+    'PHPSESSID' => 'dd4vlgddrbnpftjsu95i482jv3'
+    '_csrf' => '4c718f65e13a52470e950656f59f2b50bfc0a50abf685c449ed4c1cff5ec3a34a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Hl3mkgeXznghykuwAqCriu7ShfvmumxJ\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=article/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1436163386559; _ga=GA1.1.1897110083.1442914906; CNZZDATA4639431=cnzz_eid%3D1841090418-1443488937-%26ntime%3D1443495126; PHPSESSID=dd4vlgddrbnpftjsu95i482jv3; _csrf=4c718f65e13a52470e950656f59f2b50bfc0a50abf685c449ed4c1cff5ec3a34a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Hl3mkgeXznghykuwAqCriu7ShfvmumxJ%22%3B%7D'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '58168'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=article/articlelistjson'
+    'REQUEST_URI' => '/phpblog/admin.php?r=article/articlelistjson'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444809226.061
+    'REQUEST_TIME' => 1444809226
+]
+2015-10-14 15:53:46 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: tagsList' in F:\myapaphe\www\phpblog\backend\controllers\ArticleController.php:61
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#6 {main}
+2015-10-14 15:53:46 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'article/articlelistjson'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '10'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1436163386559'
+    '_ga' => 'GA1.1.1897110083.1442914906'
+    'CNZZDATA4639431' => 'cnzz_eid=1841090418-1443488937-&ntime=1443495126'
+    'PHPSESSID' => 'dd4vlgddrbnpftjsu95i482jv3'
+    '_csrf' => '4c718f65e13a52470e950656f59f2b50bfc0a50abf685c449ed4c1cff5ec3a34a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Hl3mkgeXznghykuwAqCriu7ShfvmumxJ\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=article/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1436163386559; _ga=GA1.1.1897110083.1442914906; CNZZDATA4639431=cnzz_eid%3D1841090418-1443488937-%26ntime%3D1443495126; PHPSESSID=dd4vlgddrbnpftjsu95i482jv3; _csrf=4c718f65e13a52470e950656f59f2b50bfc0a50abf685c449ed4c1cff5ec3a34a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Hl3mkgeXznghykuwAqCriu7ShfvmumxJ%22%3B%7D'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '58177'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=article/articlelistjson'
+    'REQUEST_URI' => '/phpblog/admin.php?r=article/articlelistjson'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444809226.825
+    'REQUEST_TIME' => 1444809226
+]
+2015-10-14 15:53:47 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: tagsList' in F:\myapaphe\www\phpblog\backend\controllers\ArticleController.php:61
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#6 {main}
+2015-10-14 15:53:47 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'article/articlelistjson'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '10'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1436163386559'
+    '_ga' => 'GA1.1.1897110083.1442914906'
+    'CNZZDATA4639431' => 'cnzz_eid=1841090418-1443488937-&ntime=1443495126'
+    'PHPSESSID' => 'dd4vlgddrbnpftjsu95i482jv3'
+    '_csrf' => '4c718f65e13a52470e950656f59f2b50bfc0a50abf685c449ed4c1cff5ec3a34a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Hl3mkgeXznghykuwAqCriu7ShfvmumxJ\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=article/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1436163386559; _ga=GA1.1.1897110083.1442914906; CNZZDATA4639431=cnzz_eid%3D1841090418-1443488937-%26ntime%3D1443495126; PHPSESSID=dd4vlgddrbnpftjsu95i482jv3; _csrf=4c718f65e13a52470e950656f59f2b50bfc0a50abf685c449ed4c1cff5ec3a34a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Hl3mkgeXznghykuwAqCriu7ShfvmumxJ%22%3B%7D'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '58179'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=article/articlelistjson'
+    'REQUEST_URI' => '/phpblog/admin.php?r=article/articlelistjson'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444809227.401
+    'REQUEST_TIME' => 1444809227
+]
+2015-10-14 15:53:48 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: tagsList' in F:\myapaphe\www\phpblog\backend\controllers\ArticleController.php:61
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#6 {main}
+2015-10-14 15:53:48 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'article/articlelistjson'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '10'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1436163386559'
+    '_ga' => 'GA1.1.1897110083.1442914906'
+    'CNZZDATA4639431' => 'cnzz_eid=1841090418-1443488937-&ntime=1443495126'
+    'PHPSESSID' => 'dd4vlgddrbnpftjsu95i482jv3'
+    '_csrf' => '4c718f65e13a52470e950656f59f2b50bfc0a50abf685c449ed4c1cff5ec3a34a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Hl3mkgeXznghykuwAqCriu7ShfvmumxJ\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=article/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1436163386559; _ga=GA1.1.1897110083.1442914906; CNZZDATA4639431=cnzz_eid%3D1841090418-1443488937-%26ntime%3D1443495126; PHPSESSID=dd4vlgddrbnpftjsu95i482jv3; _csrf=4c718f65e13a52470e950656f59f2b50bfc0a50abf685c449ed4c1cff5ec3a34a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Hl3mkgeXznghykuwAqCriu7ShfvmumxJ%22%3B%7D'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '58181'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=article/articlelistjson'
+    'REQUEST_URI' => '/phpblog/admin.php?r=article/articlelistjson'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444809228.069
+    'REQUEST_TIME' => 1444809228
+]
+2015-10-14 15:54:18 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: tagsList' in F:\myapaphe\www\phpblog\backend\controllers\ArticleController.php:61
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#6 {main}
+2015-10-14 15:54:17 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'article/articlelistjson'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '10'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=article/index'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '58189'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=article/articlelistjson'
+    'REQUEST_URI' => '/phpblog/admin.php?r=article/articlelistjson'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444809257.918
+    'REQUEST_TIME' => 1444809257
+]
+2015-10-14 15:54:19 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: tagsList' in F:\myapaphe\www\phpblog\backend\controllers\ArticleController.php:61
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#6 {main}
+2015-10-14 15:54:19 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'article/articlelistjson'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '10'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=article/index'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '58188'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=article/articlelistjson'
+    'REQUEST_URI' => '/phpblog/admin.php?r=article/articlelistjson'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444809259.787
+    'REQUEST_TIME' => 1444809259
+]
+2015-10-14 15:54:20 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: tagsList' in F:\myapaphe\www\phpblog\backend\controllers\ArticleController.php:61
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#6 {main}
+2015-10-14 15:54:20 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'article/articlelistjson'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '10'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=article/index'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '58191'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=article/articlelistjson'
+    'REQUEST_URI' => '/phpblog/admin.php?r=article/articlelistjson'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444809260.559
+    'REQUEST_TIME' => 1444809260
+]
+2015-10-14 15:54:46 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: tagsList' in F:\myapaphe\www\phpblog\backend\controllers\ArticleController.php:61
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#6 {main}
+2015-10-14 15:54:46 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'article/articlelistjson'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '10'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=article'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '58209'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=article/articlelistjson'
+    'REQUEST_URI' => '/phpblog/admin.php?r=article/articlelistjson'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444809286.108
+    'REQUEST_TIME' => 1444809286
+]
+2015-10-14 15:54:51 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: tagsList' in F:\myapaphe\www\phpblog\backend\controllers\ArticleController.php:61
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#6 {main}
+2015-10-14 15:54:51 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'article/articlelistjson'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '10'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=article'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '58213'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=article/articlelistjson'
+    'REQUEST_URI' => '/phpblog/admin.php?r=article/articlelistjson'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444809291.346
+    'REQUEST_TIME' => 1444809291
+]
+2015-10-14 15:55:03 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: tagsList' in F:\myapaphe\www\phpblog\backend\controllers\ArticleController.php:61
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#6 {main}
+2015-10-14 15:55:03 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'article/articlelistjson'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '10'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=article'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '58224'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=article/articlelistjson'
+    'REQUEST_URI' => '/phpblog/admin.php?r=article/articlelistjson'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444809303.584
+    'REQUEST_TIME' => 1444809303
+]
+2015-10-14 15:55:37 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\Helper' not found' in F:\myapaphe\www\phpblog\backend\controllers\ArticleController.php:62
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#6 {main}
+2015-10-14 15:55:37 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'article/articlelistjson'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '10'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=article'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '58230'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=article/articlelistjson'
+    'REQUEST_URI' => '/phpblog/admin.php?r=article/articlelistjson'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444809337.112
+    'REQUEST_TIME' => 1444809337
+]
+2015-10-14 15:55:37 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\Helper' not found' in F:\myapaphe\www\phpblog\backend\controllers\ArticleController.php:62
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#6 {main}
+2015-10-14 15:55:37 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'article/articlelistjson'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '10'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=article'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '58232'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=article/articlelistjson'
+    'REQUEST_URI' => '/phpblog/admin.php?r=article/articlelistjson'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444809337.794
+    'REQUEST_TIME' => 1444809337
+]
+2015-10-15 13:27:44 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: article/articleadd' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('articleadd', Array)
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('article/article...', Array)
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#2 {main}
+2015-10-15 13:27:44 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'article/articleadd'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1436163386559'
+    '_ga' => 'GA1.1.1897110083.1442914906'
+    'CNZZDATA4639431' => 'cnzz_eid=1841090418-1443488937-&ntime=1443495126'
+    'PHPSESSID' => 'dd4vlgddrbnpftjsu95i482jv3'
+    '_csrf' => '4c718f65e13a52470e950656f59f2b50bfc0a50abf685c449ed4c1cff5ec3a34a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Hl3mkgeXznghykuwAqCriu7ShfvmumxJ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1436163386559; _ga=GA1.1.1897110083.1442914906; CNZZDATA4639431=cnzz_eid%3D1841090418-1443488937-%26ntime%3D1443495126; PHPSESSID=dd4vlgddrbnpftjsu95i482jv3; _csrf=4c718f65e13a52470e950656f59f2b50bfc0a50abf685c449ed4c1cff5ec3a34a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Hl3mkgeXznghykuwAqCriu7ShfvmumxJ%22%3B%7D'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '51770'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=article/articleadd'
+    'REQUEST_URI' => '/phpblog/admin.php?r=article/articleadd'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444886864.655
+    'REQUEST_TIME' => 1444886864
+]

@@ -73,9 +73,10 @@ class TagController extends Controller
  		 */
  		public function actionTagdelete(){
 
- 			$ids 	= \Yii::$app->request->post('ids');
- 			$tids 	= explode(',', $ids);
- 			$flag  	=Tags::tagsDelete($tids);
+ 			$ids 		= \Yii::$app->request->post('ids');
+ 			$tids 		= explode(',', $ids);
+ 			$tagModel	= Tags::getInstance();
+ 			$flag  		= $tagModel::dataDelete($tids,Tags::tableName());
  			if($flag){
 
  				Helper::Echo_Json(1,'数据删除成功');
@@ -92,8 +93,9 @@ class TagController extends Controller
  				$taskModel 				= new \common\models\Task();
  				$taskModel->taskname 	= 'Tags标签导出';
  				$taskModel->createtime 	= time();
- 				$taskModel->sql         = 'SELECT * FROM '.Tags::tableName();
  				$taskModel->status      = '1';
+ 				$taskModel->exportcolumn= 'TagId,Tagname'; 
+ 				$taskModel->model       = 'Tags';
  				if($taskModel->save()){
 
  					Helper::Echo_Json(1,'队列任务添加成功');

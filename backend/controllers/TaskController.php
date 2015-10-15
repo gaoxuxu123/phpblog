@@ -43,6 +43,23 @@ use yii\helpers\ArrayHelper;
 	 			Helper::Echo_Json(1,$json);
 			}
 			/**
+			 * 任务删除
+			 */
+			public function actionTaskdelete(){
+
+				 $ids 			= \Yii::$app->request->post('ids');
+				 $ids 			= explode(',',$ids);
+				 $taskModel 	= Task::getInstance();	
+				 $flag 			= $taskModel::dataDelete($ids,Task::tableName());
+				 if($flag){
+
+				 	Helper::Echo_Json(1,'数据删除成功');
+				 }else{
+				 	Helper::Echo_Json(0,'数据删除失败');
+				 }
+
+			}
+			/**
 			 * 执行队列任务
 			 */
 			public function actionTaskdo(){
@@ -61,20 +78,22 @@ use yii\helpers\ArrayHelper;
 				}
 				$fp = fopen($path.'/'.$filename,'w');
 				//定义表头
-				$column_name		= ['TaskId','任务名称'];
+				$column_name		= explode(',',$taskModel->exportcolumn);
 				//写入标题
 				fputcsv($fp, $column_name);
 				//做分次读数据库
 				$pagecount 			= 100;//一次读取多少条 
 				//获取记录总数
-				$total				= $taskModel::dataCount();
-				$SQL				= $taskModel->sql;
+				$cmodel      		= $taskModel->model;
+				//实例化model对象
+				$tmodel     		= Helper::getModelInstance($cmodel);
+				$total				= $tmodel::dataCount();
 				for ($i=0;$i<intval($total/$pagecount)+1;$i++){  
 
 						$pageIndex  = $i*$pagecount;
 	 					$pageSize   = $pagecount;	
 	 					$page 		= ['pageSize'=>$pageSize,'pageIndex'=>$pageIndex];
-	 					$taskList  	= $taskModel::dataPage(null,$page);
+	 					$taskList  	= $tmodel::dataPage(null,$page);
 	 					foreach ( $taskList as $item ) {  
 		                	$rows 	= [];  
 			                foreach ( $item as $v){  
@@ -109,16 +128,15 @@ use yii\helpers\ArrayHelper;
 		        //输出文件内容       
 		        //读取文件内容并直接输出到浏览器      
 		        while(!feof($fp)) {  
-		                         set_time_limit(0);  
-		                         echo fread($fp,1024);  
-		                         flush();  
-		                         ob_flush();  
-		                    }   
-		     
+
+	                         set_time_limit(0);  
+	                         echo fread($fp,1024);  
+	                         flush();  
+	                         ob_flush();  
+		             }   
 		        fclose ( $fp);      
 		        exit ();  
-
 			}
-	}
+	    }
 
 ?>

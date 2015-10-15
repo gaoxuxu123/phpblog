@@ -7,6 +7,7 @@ AppAsset::register($this);
 AppAsset::addScript($this,WEBPATH.'/scripts/js/ueditor/ueditor.config.js');
 AppAsset::addScript($this,WEBPATH.'/scripts/js/ueditor/ueditor.all.min.js');
 AppAsset::addScript($this,WEBPATH.'/scripts/js/ueditor/lang/zh-cn/zh-cn.js');
+
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -17,6 +18,7 @@ AppAsset::addScript($this,WEBPATH.'/scripts/js/ueditor/lang/zh-cn/zh-cn.js');
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
+  
 </head>
 <body style="background-color:#FFFFFF">
  <?php $this->beginBody() ?>
@@ -50,7 +52,7 @@ AppAsset::addScript($this,WEBPATH.'/scripts/js/ueditor/lang/zh-cn/zh-cn.js');
 			<legend>文章分类</legend>
 			<div>
        <?php foreach($classList as $v):?>  
-			  <input type="radio" name='class' value="<?php echo $v['classname'] ?>"><?php echo $v['classname'] ?>
+			  <input type="radio" name='class' value="<?php echo $v['id'] ?>"><?php echo $v['classname'] ?>
 		   <?php endforeach;?> 
 		</div>
 		</fieldset>
@@ -78,10 +80,13 @@ AppAsset::addScript($this,WEBPATH.'/scripts/js/ueditor/lang/zh-cn/zh-cn.js');
 	  $(function(){
 
         	var ue = UE.getEditor('editor');
+           SyntaxHighlighter.all() //执行代码高亮
+           SyntaxHighlighter.defaults['toolbar'] = false;
         	$(".submit").click(function(){
 
         			$("#form1").submit();
         	});
+   
         });
 
 </script>
