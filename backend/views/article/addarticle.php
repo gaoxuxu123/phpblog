@@ -80,8 +80,7 @@ AppAsset::addScript($this,WEBPATH.'/scripts/js/ueditor/lang/zh-cn/zh-cn.js');
 	  $(function(){
 
         	var ue = UE.getEditor('editor');
-           SyntaxHighlighter.all() //执行代码高亮
-           SyntaxHighlighter.defaults['toolbar'] = false;
+          
         	$(".submit").click(function(){
 
         			$("#form1").submit();

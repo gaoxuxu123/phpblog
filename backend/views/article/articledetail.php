@@ -42,4 +42,5 @@ AppAsset::addCss($this,WEBPATH.'/scripts/js/shCoreEclipse.css');
     <!--用于消除右上角的广告-->  
     <script type="text/javascript">SyntaxHighlighter.defaults['toolbar'] = false;</script> 
 </html>
+
 <?php $this->endPage() ?>
