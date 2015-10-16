@@ -10,7 +10,7 @@ return [
           			'menus'=>[
 
 	          					['menuid'=>'2','menuname'=>'用户管理','icon'=>'icon-users','url'=>'admin.php?r=admin/userlist'],
-	          					['menuid'=>'3','menuname'=>'数据库管理','icon'=>'icon-role','url'=>''],
+	          					['menuid'=>'3','menuname'=>'数据库管理','icon'=>'icon-role','url'=>'admin.php?r=database/index'],
 	          					['menuid'=>'4','menuname'=>'权限设置','icon'=>'icon-set','url'=>''],
 	          					['menuid'=>'5','menuname'=>'系统日志','icon'=>'icon-log','url'=>''],
 	          					['menuid'=>'9','menuname'=>'回收站','icon'=>'r3_c18','url'=>'']

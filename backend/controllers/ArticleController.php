@@ -34,27 +34,26 @@ use common\helpers\Helper;
  		public function actionAddarticledo(){
 
 
-	 		  $postdata 	= \Yii::$app->request->post();	 		 
-	 		  $articleModel = Article::getInstance();
-	 		  $articleModel->title = $postdata['title'];
-	 		  $articleModel->tag   = implode(',', $postdata['tag']);
-	 		  $articleModel->content = $_POST['editorValue'];
+	 		  $postdata 			 = \Yii::$app->request->post();	 		 
+	 		  $articleModel 		 = Article::getInstance();
+	 		  $articleModel->title 	 = $postdata['title'];
+	 		  $articleModel->tag   	 = implode(',', $postdata['tag']);
+	 		  $articleModel->content = $postdata['editorValue'];
 	 		  $articleModel->pubtime = time();
 	 		  $articleModel->brief   = $postdata['brief'];
 	 		  $articleModel->classid = $postdata['class'];
-	 		  if($articleModel->save()){
-
-	 		  	echo "<script>alert('操作成功');parent.location.reload();</script>";
-	 		  }
+	 		  $flag					 = $articleModel->save();
+	 		  Helper::alert_msg($flag);
  		}
  		/**
  		 * 文章预览
  		 */
  		public function actionArticledetail(){
 
- 			$id = \Yii::$app->request->get('id');
- 			$articleModel = Article::getInstance();
- 			$article = $articleModel::findOne($id);
+ 			$id 			= \Yii::$app->request->get('id');
+ 			$articleModel 	= Article::getInstance();
+ 			$article 		= $articleModel::findOne($id);
+
  			return $this->render('articledetail',['article'=>$article]);
 
 

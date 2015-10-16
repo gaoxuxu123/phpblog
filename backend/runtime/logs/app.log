@@ -12274,3 +12274,2881 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1444886864.655
     'REQUEST_TIME' => 1444886864
 ]
+2015-10-16 10:46:18 [127.0.0.1][-][-][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\db\mysql\Schema::findTableNames()' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Object.php:220
+Stack trace:
+#0 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(21): yii\base\Object->__call('findTableNames', Array)
+#1 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(21): yii\db\mysql\Schema->findTableNames('mysqli')
+#2 [internal function]: backend\controllers\DatabaseController->actionIndex()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/index', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#9 {main}
+2015-10-16 10:46:18 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/index'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '49215'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=database/index'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/index'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444963578.447
+    'REQUEST_TIME' => 1444963578
+]
+2015-10-16 10:49:18 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Cannot instantiate abstract class yii\db\Schema' in F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php:20
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#6 {main}
+2015-10-16 10:49:18 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/index'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '49345'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=database/index'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/index'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444963758.817
+    'REQUEST_TIME' => 1444963758
+]
+2015-10-16 10:51:30 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Connection::dsn cannot be empty.' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Connection.php:523
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Connection.php(796): yii\db\Connection->getSlavePdo()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Connection.php(680): yii\db\Connection->getDriverName()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Connection.php(709): yii\db\Connection->getSchema()
+#5 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(21): yii\db\Connection->getTableSchema('mysqli')
+#6 [internal function]: backend\controllers\DatabaseController->actionIndex()
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#10 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/index', Array)
+#11 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#13 {main}
+2015-10-16 10:51:30 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/index'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '49375'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=database/index'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/index'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444963890.74
+    'REQUEST_TIME' => 1444963890
+]
+2015-10-16 14:30:10 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "database/database/tabinfos".' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/databa...', Array)
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#2 {main}
+2015-10-16 14:30:09 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/database/tabinfos'
+    'tableName' => 'ligao_article'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=database'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'CONTENT_LENGTH' => '0'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '52089'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=database/database/tabinfos&tableName=ligao_article'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/database/tabinfos&tableName=ligao_article'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444977009.959
+    'REQUEST_TIME' => 1444977009
+]
+2015-10-16 14:44:02 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "database/database/tabinfos".' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/databa...', Array)
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#2 {main}
+2015-10-16 14:44:02 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/database/tabinfos'
+    'tableName' => 'ligao_task'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=database'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'CONTENT_LENGTH' => '0'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '52757'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=database/database/tabinfos&tableName=ligao_task'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/database/tabinfos&tableName=ligao_task'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444977842.779
+    'REQUEST_TIME' => 1444977842
+]
+2015-10-16 14:44:02 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "database/database/tabinfos".' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/databa...', Array)
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#2 {main}
+2015-10-16 14:44:02 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/database/tabinfos'
+    'tableName' => 'ligao_task'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=database'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'CONTENT_LENGTH' => '0'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '52760'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=database/database/tabinfos&tableName=ligao_task'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/database/tabinfos&tableName=ligao_task'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444977842.779
+    'REQUEST_TIME' => 1444977842
+]
+2015-10-16 14:44:04 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "database/database/tabinfos".' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/databa...', Array)
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#2 {main}
+2015-10-16 14:44:04 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/database/tabinfos'
+    'tableName' => 'ligao_tags'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=database'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'CONTENT_LENGTH' => '0'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '52760'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=database/database/tabinfos&tableName=ligao_tags'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/database/tabinfos&tableName=ligao_tags'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444977844.091
+    'REQUEST_TIME' => 1444977844
+]
+2015-10-16 14:44:04 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "database/database/tabinfos".' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/databa...', Array)
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#2 {main}
+2015-10-16 14:44:04 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/database/tabinfos'
+    'tableName' => 'ligao_tags'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=database'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'CONTENT_LENGTH' => '0'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '52757'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=database/database/tabinfos&tableName=ligao_tags'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/database/tabinfos&tableName=ligao_tags'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444977844.092
+    'REQUEST_TIME' => 1444977844
+]
+2015-10-16 16:24:23 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ligao_article' at line 1' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:825
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(825): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ligao_article' at line 1
+The SQL being executed was: SHOW TABLE STATUS ligao_article' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(840): yii\db\Schema->convertException(Object(PDOException), 'SHOW TABLE STAT...')
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ligao_article' at line 1
+)
+
+2015-10-16 16:24:23 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/tabinfos'
+    'tableName' => 'ligao_article'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '56016'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=database/tabinfos&tableName=ligao_article'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/tabinfos&tableName=ligao_article'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444983863.134
+    'REQUEST_TIME' => 1444983863
+]
+2015-10-16 16:26:26 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1049 Unknown database 'ligao_article'' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:825
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(825): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1049 Unknown database 'ligao_article'
+The SQL being executed was: SHOW TABLE STATUS FROM ligao_article' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(840): yii\db\Schema->convertException(Object(PDOException), 'SHOW TABLE STAT...')
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1049
+    [2] => Unknown database 'ligao_article'
+)
+
+2015-10-16 16:26:26 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/tabinfos'
+    'tableName' => 'ligao_article'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '56043'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=database/tabinfos&tableName=ligao_article'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/tabinfos&tableName=ligao_article'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444983986.1
+    'REQUEST_TIME' => 1444983986
+]
+2015-10-16 16:26:59 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM ligao_article' at line 1' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:825
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(825): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM ligao_article' at line 1
+The SQL being executed was: SHOW  STATUS FROM ligao_article' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(840): yii\db\Schema->convertException(Object(PDOException), 'SHOW  STATUS FR...')
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM ligao_article' at line 1
+)
+
+2015-10-16 16:26:59 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/tabinfos'
+    'tableName' => 'ligao_article'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '56050'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=database/tabinfos&tableName=ligao_article'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/tabinfos&tableName=ligao_article'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444984019.334
+    'REQUEST_TIME' => 1444984019
+]
+2015-10-16 16:28:39 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%ligao_article%' at line 1' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:825
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(825): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%ligao_article%' at line 1
+The SQL being executed was: SHOW TABLE STATUS from db_name LIKE %ligao_article%' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(840): yii\db\Schema->convertException(Object(PDOException), 'SHOW TABLE STAT...')
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%ligao_article%' at line 1
+)
+
+2015-10-16 16:28:39 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/tabinfos'
+    'tableName' => 'ligao_article'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '56197'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=database/tabinfos&tableName=ligao_article'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/tabinfos&tableName=ligao_article'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444984119.261
+    'REQUEST_TIME' => 1444984119
+]
+2015-10-16 16:28:59 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%ligao_article%' at line 1' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:825
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(825): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%ligao_article%' at line 1
+The SQL being executed was: SHOW TABLE STATUS FROM db_name LIKE %ligao_article%' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(840): yii\db\Schema->convertException(Object(PDOException), 'SHOW TABLE STAT...')
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%ligao_article%' at line 1
+)
+
+2015-10-16 16:28:59 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/tabinfos'
+    'tableName' => 'ligao_article'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '56209'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=database/tabinfos&tableName=ligao_article'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/tabinfos&tableName=ligao_article'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444984139.879
+    'REQUEST_TIME' => 1444984139
+]
+2015-10-16 16:29:00 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%ligao_article%' at line 1' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:825
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(825): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%ligao_article%' at line 1
+The SQL being executed was: SHOW TABLE STATUS FROM db_name LIKE %ligao_article%' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(840): yii\db\Schema->convertException(Object(PDOException), 'SHOW TABLE STAT...')
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%ligao_article%' at line 1
+)
+
+2015-10-16 16:29:00 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/tabinfos'
+    'tableName' => 'ligao_article'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '56211'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=database/tabinfos&tableName=ligao_article'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/tabinfos&tableName=ligao_article'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444984140.643
+    'REQUEST_TIME' => 1444984140
+]
+2015-10-16 16:29:01 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%ligao_article%' at line 1' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:825
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(825): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%ligao_article%' at line 1
+The SQL being executed was: SHOW TABLE STATUS FROM db_name LIKE %ligao_article%' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(840): yii\db\Schema->convertException(Object(PDOException), 'SHOW TABLE STAT...')
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%ligao_article%' at line 1
+)
+
+2015-10-16 16:29:01 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/tabinfos'
+    'tableName' => 'ligao_article'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '56213'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=database/tabinfos&tableName=ligao_article'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/tabinfos&tableName=ligao_article'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444984141.033
+    'REQUEST_TIME' => 1444984141
+]
+2015-10-16 16:29:13 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1049 Unknown database 'db_name'' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:825
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(825): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1049 Unknown database 'db_name'
+The SQL being executed was: SHOW TABLE STATUS FROM db_name ' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(840): yii\db\Schema->convertException(Object(PDOException), 'SHOW TABLE STAT...')
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1049
+    [2] => Unknown database 'db_name'
+)
+
+2015-10-16 16:29:13 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/tabinfos'
+    'tableName' => 'ligao_article'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '56222'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=database/tabinfos&tableName=ligao_article'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/tabinfos&tableName=ligao_article'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444984153.497
+    'REQUEST_TIME' => 1444984153
+]
+2015-10-16 16:30:20 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%ligao_article%' at line 1' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:825
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(825): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%ligao_article%' at line 1
+The SQL being executed was: SHOW TABLE STATUS FROM phpblog LIKE %ligao_article%' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(840): yii\db\Schema->convertException(Object(PDOException), 'SHOW TABLE STAT...')
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%ligao_article%' at line 1
+)
+
+2015-10-16 16:30:20 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/tabinfos'
+    'tableName' => 'ligao_article'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '56246'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=database/tabinfos&tableName=ligao_article'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/tabinfos&tableName=ligao_article'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444984220.234
+    'REQUEST_TIME' => 1444984220
+]
+2015-10-16 16:30:55 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ')'' in F:\myapaphe\www\phpblog\common\models\Database.php:71
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(29): ::spl_autoload_call()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): backend\controllers\DatabaseController->actionTabinfos()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#7 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#8 {main}
+2015-10-16 16:30:55 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/tabinfos'
+    'tableName' => 'ligao_article'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '56254'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=database/tabinfos&tableName=ligao_article'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/tabinfos&tableName=ligao_article'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444984255.109
+    'REQUEST_TIME' => 1444984255
+]
+2015-10-16 16:31:02 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%ligao_article' at line 1' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:825
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(825): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%ligao_article' at line 1
+The SQL being executed was: SHOW TABLE STATUS FROM phpblog LIKE %ligao_article' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(840): yii\db\Schema->convertException(Object(PDOException), 'SHOW TABLE STAT...')
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%ligao_article' at line 1
+)
+
+2015-10-16 16:31:02 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/tabinfos'
+    'tableName' => 'ligao_article'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '56259'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=database/tabinfos&tableName=ligao_article'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/tabinfos&tableName=ligao_article'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444984262.885
+    'REQUEST_TIME' => 1444984262
+]
+2015-10-16 16:31:30 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%ligao_article%' at line 1' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:825
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(825): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%ligao_article%' at line 1
+The SQL being executed was: SHOW TABLE STATUS FROM phpblog LIKE %ligao_article%' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(840): yii\db\Schema->convertException(Object(PDOException), 'SHOW TABLE STAT...')
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%ligao_article%' at line 1
+)
+
+2015-10-16 16:31:30 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/tabinfos'
+    'tableName' => 'ligao_article'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '56271'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=database/tabinfos&tableName=ligao_article'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/tabinfos&tableName=ligao_article'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444984290.002
+    'REQUEST_TIME' => 1444984290
+]
+2015-10-16 16:34:29 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ligao_article' at line 1' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:825
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(825): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ligao_article' at line 1
+The SQL being executed was: SHOW TABLE STATUS FROM phpblog LIKE ligao_article' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(840): yii\db\Schema->convertException(Object(PDOException), 'SHOW TABLE STAT...')
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ligao_article' at line 1
+)
+
+2015-10-16 16:34:29 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/tabinfos'
+    'tableName' => 'ligao_article'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '56799'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=database/tabinfos&tableName=ligao_article'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/tabinfos&tableName=ligao_article'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444984469.497
+    'REQUEST_TIME' => 1444984469
+]
+2015-10-16 16:35:39 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '$table' at line 1' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:825
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(825): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '$table' at line 1
+The SQL being executed was: SHOW TABLE STATUS FROM phpblog LIKE $table' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(840): yii\db\Schema->convertException(Object(PDOException), 'SHOW TABLE STAT...')
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '$table' at line 1
+)
+
+2015-10-16 16:35:39 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/tabinfos'
+    'tableName' => 'ligao_article'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '56820'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=database/tabinfos&tableName=ligao_article'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/tabinfos&tableName=ligao_article'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444984539.465
+    'REQUEST_TIME' => 1444984539
+]
+2015-10-16 16:35:47 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '{$table}' at line 1' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:825
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(825): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '{$table}' at line 1
+The SQL being executed was: SHOW TABLE STATUS FROM phpblog LIKE {$table}' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(840): yii\db\Schema->convertException(Object(PDOException), 'SHOW TABLE STAT...')
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '{$table}' at line 1
+)
+
+2015-10-16 16:35:47 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/tabinfos'
+    'tableName' => 'ligao_article'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '56828'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=database/tabinfos&tableName=ligao_article'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/tabinfos&tableName=ligao_article'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444984547.699
+    'REQUEST_TIME' => 1444984547
+]
+2015-10-16 16:35:48 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '{$table}' at line 1' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:825
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(825): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '{$table}' at line 1
+The SQL being executed was: SHOW TABLE STATUS FROM phpblog LIKE {$table}' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(840): yii\db\Schema->convertException(Object(PDOException), 'SHOW TABLE STAT...')
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '{$table}' at line 1
+)
+
+2015-10-16 16:35:48 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/tabinfos'
+    'tableName' => 'ligao_article'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '56831'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=database/tabinfos&tableName=ligao_article'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/tabinfos&tableName=ligao_article'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444984548.391
+    'REQUEST_TIME' => 1444984548
+]
+2015-10-16 16:35:48 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '{$table}' at line 1' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:825
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(825): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '{$table}' at line 1
+The SQL being executed was: SHOW TABLE STATUS FROM phpblog LIKE {$table}' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(840): yii\db\Schema->convertException(Object(PDOException), 'SHOW TABLE STAT...')
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '{$table}' at line 1
+)
+
+2015-10-16 16:35:48 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/tabinfos'
+    'tableName' => 'ligao_article'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '56833'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=database/tabinfos&tableName=ligao_article'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/tabinfos&tableName=ligao_article'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444984548.597
+    'REQUEST_TIME' => 1444984548
+]
+2015-10-16 16:36:17 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ligao_article' at line 1' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:825
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(825): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ligao_article' at line 1
+The SQL being executed was: SHOW TABLE STATUS FROM phpblog LIKE ligao_article' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(840): yii\db\Schema->convertException(Object(PDOException), 'SHOW TABLE STAT...')
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ligao_article' at line 1
+)
+
+2015-10-16 16:36:17 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/tabinfos'
+    'tableName' => 'ligao_article'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '56844'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=database/tabinfos&tableName=ligao_article'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/tabinfos&tableName=ligao_article'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444984577.472
+    'REQUEST_TIME' => 1444984577
+]
+2015-10-16 16:37:33 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1049 Unknown database 'ligao_article'' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:825
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(825): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1049 Unknown database 'ligao_article'
+The SQL being executed was: SHOW TABLE STATUS FROM ligao_article' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(840): yii\db\Schema->convertException(Object(PDOException), 'SHOW TABLE STAT...')
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1049
+    [2] => Unknown database 'ligao_article'
+)
+
+2015-10-16 16:37:33 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/tabinfos'
+    'tableName' => 'ligao_article'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '56999'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=database/tabinfos&tableName=ligao_article'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/tabinfos&tableName=ligao_article'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444984653.34
+    'REQUEST_TIME' => 1444984653
+]
+2015-10-16 16:38:15 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ligao_article STATUS FROM phpblog' at line 1' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:825
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(825): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ligao_article STATUS FROM phpblog' at line 1
+The SQL being executed was: SHOW ligao_article STATUS FROM phpblog' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(840): yii\db\Schema->convertException(Object(PDOException), 'SHOW ligao_arti...')
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ligao_article STATUS FROM phpblog' at line 1
+)
+
+2015-10-16 16:38:15 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/tabinfos'
+    'tableName' => 'ligao_article'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '57011'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=database/tabinfos&tableName=ligao_article'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/tabinfos&tableName=ligao_article'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444984695.286
+    'REQUEST_TIME' => 1444984695
+]
+2015-10-16 16:38:16 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ligao_article STATUS FROM phpblog' at line 1' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:825
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(825): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ligao_article STATUS FROM phpblog' at line 1
+The SQL being executed was: SHOW ligao_article STATUS FROM phpblog' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(840): yii\db\Schema->convertException(Object(PDOException), 'SHOW ligao_arti...')
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ligao_article STATUS FROM phpblog' at line 1
+)
+
+2015-10-16 16:38:16 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/tabinfos'
+    'tableName' => 'ligao_article'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '57013'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=database/tabinfos&tableName=ligao_article'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/tabinfos&tableName=ligao_article'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444984696.237
+    'REQUEST_TIME' => 1444984696
+]
+2015-10-16 16:38:16 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ligao_article STATUS FROM phpblog' at line 1' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:825
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(825): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ligao_article STATUS FROM phpblog' at line 1
+The SQL being executed was: SHOW ligao_article STATUS FROM phpblog' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(840): yii\db\Schema->convertException(Object(PDOException), 'SHOW ligao_arti...')
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ligao_article STATUS FROM phpblog' at line 1
+)
+
+2015-10-16 16:38:16 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/tabinfos'
+    'tableName' => 'ligao_article'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '57015'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=database/tabinfos&tableName=ligao_article'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/tabinfos&tableName=ligao_article'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444984696.524
+    'REQUEST_TIME' => 1444984696
+]
+2015-10-16 16:38:16 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ligao_article STATUS FROM phpblog' at line 1' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:825
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(825): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ligao_article STATUS FROM phpblog' at line 1
+The SQL being executed was: SHOW ligao_article STATUS FROM phpblog' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(840): yii\db\Schema->convertException(Object(PDOException), 'SHOW ligao_arti...')
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ligao_article STATUS FROM phpblog' at line 1
+)
+
+2015-10-16 16:38:16 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/tabinfos'
+    'tableName' => 'ligao_article'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '57017'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=database/tabinfos&tableName=ligao_article'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/tabinfos&tableName=ligao_article'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444984696.785
+    'REQUEST_TIME' => 1444984696
+]
+2015-10-16 16:38:17 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ligao_article STATUS FROM phpblog' at line 1' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:825
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(825): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ligao_article STATUS FROM phpblog' at line 1
+The SQL being executed was: SHOW ligao_article STATUS FROM phpblog' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(840): yii\db\Schema->convertException(Object(PDOException), 'SHOW ligao_arti...')
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ligao_article STATUS FROM phpblog' at line 1
+)
+
+2015-10-16 16:38:17 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/tabinfos'
+    'tableName' => 'ligao_article'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '57020'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=database/tabinfos&tableName=ligao_article'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/tabinfos&tableName=ligao_article'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444984697.017
+    'REQUEST_TIME' => 1444984697
+]
+2015-10-16 16:38:17 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ligao_article STATUS FROM phpblog' at line 1' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:825
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(825): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ligao_article STATUS FROM phpblog' at line 1
+The SQL being executed was: SHOW ligao_article STATUS FROM phpblog' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(840): yii\db\Schema->convertException(Object(PDOException), 'SHOW ligao_arti...')
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ligao_article STATUS FROM phpblog' at line 1
+)
+
+2015-10-16 16:38:17 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/tabinfos'
+    'tableName' => 'ligao_article'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '57022'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=database/tabinfos&tableName=ligao_article'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/tabinfos&tableName=ligao_article'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444984697.285
+    'REQUEST_TIME' => 1444984697
+]
+2015-10-16 16:38:17 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ligao_article STATUS FROM phpblog' at line 1' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:825
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(825): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ligao_article STATUS FROM phpblog' at line 1
+The SQL being executed was: SHOW ligao_article STATUS FROM phpblog' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(840): yii\db\Schema->convertException(Object(PDOException), 'SHOW ligao_arti...')
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ligao_article STATUS FROM phpblog' at line 1
+)
+
+2015-10-16 16:38:17 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/tabinfos'
+    'tableName' => 'ligao_article'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '57024'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=database/tabinfos&tableName=ligao_article'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/tabinfos&tableName=ligao_article'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444984697.542
+    'REQUEST_TIME' => 1444984697
+]
+2015-10-16 16:38:17 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ligao_article STATUS FROM phpblog' at line 1' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:825
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(825): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ligao_article STATUS FROM phpblog' at line 1
+The SQL being executed was: SHOW ligao_article STATUS FROM phpblog' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(840): yii\db\Schema->convertException(Object(PDOException), 'SHOW ligao_arti...')
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ligao_article STATUS FROM phpblog' at line 1
+)
+
+2015-10-16 16:38:17 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/tabinfos'
+    'tableName' => 'ligao_article'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '57026'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=database/tabinfos&tableName=ligao_article'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/tabinfos&tableName=ligao_article'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444984697.807
+    'REQUEST_TIME' => 1444984697
+]
+2015-10-16 16:38:55 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ligao_article' in 'where clause'' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:825
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(825): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ligao_article' in 'where clause'
+The SQL being executed was: SHOW TABLE STATUS FROM phpblog WHERE Name = ligao_article' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(840): yii\db\Schema->convertException(Object(PDOException), 'SHOW TABLE STAT...')
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 F:\myapaphe\www\phpblog\common\models\Database.php(72): yii\db\Command->queryAll()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(31): common\models\Database::getTableInfo('ligao_article')
+#4 [internal function]: backend\controllers\DatabaseController->actionTabinfos()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('tabinfos', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/tabinf...', Array)
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'ligao_article' in 'where clause'
+)
+
+2015-10-16 16:38:55 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/tabinfos'
+    'tableName' => 'ligao_article'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=e99a8ae33c76862c178dcd5dc6842621317ba087bccff48192226467eaadeba9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228IuM0oz7m7ujhQ8LuOvhgM10C7G4PWoa%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '57037'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=database/tabinfos&tableName=ligao_article'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/tabinfos&tableName=ligao_article'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1444984735.246
+    'REQUEST_TIME' => 1444984735
+]
