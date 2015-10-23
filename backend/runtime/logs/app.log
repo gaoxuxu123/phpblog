@@ -15152,3 +15152,2401 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1444984735.246
     'REQUEST_TIME' => 1444984735
 ]
+2015-10-19 09:13:15 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(206): yii\db\Connection->getSlavePdo()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(819): yii\db\Command->prepare(true)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\ActiveQuery.php(130): yii\db\Query->all(NULL)
+#9 F:\myapaphe\www\phpblog\common\base\BaseActiveRecord.php(119): yii\db\ActiveQuery->all()
+#10 F:\myapaphe\www\phpblog\backend\controllers\ArticleController.php(68): common\base\BaseActiveRecord::dataPage(NULL, Array)
+#11 [internal function]: backend\controllers\ArticleController->actionArticlelistjson()
+#12 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('articlelistjson', Array)
+#15 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('article/article...', Array)
+#16 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#18 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(206): yii\db\Connection->getSlavePdo()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(819): yii\db\Command->prepare(true)
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\ActiveQuery.php(130): yii\db\Query->all(NULL)
+#7 F:\myapaphe\www\phpblog\common\base\BaseActiveRecord.php(119): yii\db\ActiveQuery->all()
+#8 F:\myapaphe\www\phpblog\backend\controllers\ArticleController.php(68): common\base\BaseActiveRecord::dataPage(NULL, Array)
+#9 [internal function]: backend\controllers\ArticleController->actionArticlelistjson()
+#10 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#11 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#12 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('articlelistjson', Array)
+#13 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('article/article...', Array)
+#14 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#16 {main}
+Additional Information:
+
+2015-10-19 09:13:12 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'article/articlelistjson'
+]
+
+$_POST = [
+    'page' => '1'
+    'rows' => '10'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1436163386559'
+    '_ga' => 'GA1.1.1897110083.1442914906'
+    'CNZZDATA4639431' => 'cnzz_eid=1841090418-1443488937-&ntime=1443495126'
+    '_csrf' => '19875b99233ce67e7d0bc36f8d1d710e7c3e5f80b80a9abd760c748a2b96c8cda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"zgPZoj4XmWBgj86RzKNoFQ5axUzYrfoX\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '14'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=article/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1436163386559; _ga=GA1.1.1897110083.1442914906; CNZZDATA4639431=cnzz_eid%3D1841090418-1443488937-%26ntime%3D1443495126; _csrf=19875b99233ce67e7d0bc36f8d1d710e7c3e5f80b80a9abd760c748a2b96c8cda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22zgPZoj4XmWBgj86RzKNoFQ5axUzYrfoX%22%3B%7D'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '50524'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=article/articlelistjson'
+    'REQUEST_URI' => '/phpblog/admin.php?r=article/articlelistjson'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1445217192.543
+    'REQUEST_TIME' => 1445217192
+]
+2015-10-19 09:13:15 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(206): yii\db\Connection->getSlavePdo()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(819): yii\db\Command->prepare(true)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\ActiveQuery.php(130): yii\db\Query->all(NULL)
+#9 F:\myapaphe\www\phpblog\common\base\BaseActiveRecord.php(75): yii\db\ActiveQuery->all()
+#10 F:\myapaphe\www\phpblog\backend\controllers\ArticleController.php(27): common\base\BaseActiveRecord::findAll()
+#11 [internal function]: backend\controllers\ArticleController->actionAddarticle()
+#12 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('addarticle', Array)
+#15 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('article/addarti...', Array)
+#16 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#18 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(206): yii\db\Connection->getSlavePdo()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(819): yii\db\Command->prepare(true)
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\ActiveQuery.php(130): yii\db\Query->all(NULL)
+#7 F:\myapaphe\www\phpblog\common\base\BaseActiveRecord.php(75): yii\db\ActiveQuery->all()
+#8 F:\myapaphe\www\phpblog\backend\controllers\ArticleController.php(27): common\base\BaseActiveRecord::findAll()
+#9 [internal function]: backend\controllers\ArticleController->actionAddarticle()
+#10 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#11 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#12 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('addarticle', Array)
+#13 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('article/addarti...', Array)
+#14 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#16 {main}
+Additional Information:
+
+2015-10-19 09:13:12 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'article/addarticle'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1436163386559'
+    '_ga' => 'GA1.1.1897110083.1442914906'
+    'CNZZDATA4639431' => 'cnzz_eid=1841090418-1443488937-&ntime=1443495126'
+    '_csrf' => '19875b99233ce67e7d0bc36f8d1d710e7c3e5f80b80a9abd760c748a2b96c8cda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"zgPZoj4XmWBgj86RzKNoFQ5axUzYrfoX\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=article/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1436163386559; _ga=GA1.1.1897110083.1442914906; CNZZDATA4639431=cnzz_eid%3D1841090418-1443488937-%26ntime%3D1443495126; _csrf=19875b99233ce67e7d0bc36f8d1d710e7c3e5f80b80a9abd760c748a2b96c8cda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22zgPZoj4XmWBgj86RzKNoFQ5axUzYrfoX%22%3B%7D'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '50537'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=article%2Faddarticle'
+    'REQUEST_URI' => '/phpblog/admin.php?r=article%2Faddarticle'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1445217192.405
+    'REQUEST_TIME' => 1445217192
+]
+2015-10-19 09:13:15 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(206): yii\db\Connection->getSlavePdo()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(819): yii\db\Command->prepare(true)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\ActiveQuery.php(130): yii\db\Query->all(NULL)
+#9 F:\myapaphe\www\phpblog\common\base\BaseActiveRecord.php(75): yii\db\ActiveQuery->all()
+#10 F:\myapaphe\www\phpblog\backend\controllers\ArticleController.php(27): common\base\BaseActiveRecord::findAll()
+#11 [internal function]: backend\controllers\ArticleController->actionAddarticle()
+#12 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('addarticle', Array)
+#15 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('article/addarti...', Array)
+#16 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#18 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(206): yii\db\Connection->getSlavePdo()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(819): yii\db\Command->prepare(true)
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(349): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\ActiveQuery.php(130): yii\db\Query->all(NULL)
+#7 F:\myapaphe\www\phpblog\common\base\BaseActiveRecord.php(75): yii\db\ActiveQuery->all()
+#8 F:\myapaphe\www\phpblog\backend\controllers\ArticleController.php(27): common\base\BaseActiveRecord::findAll()
+#9 [internal function]: backend\controllers\ArticleController->actionAddarticle()
+#10 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#11 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#12 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('addarticle', Array)
+#13 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('article/addarti...', Array)
+#14 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#16 {main}
+Additional Information:
+
+2015-10-19 09:13:12 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'article/addarticle'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1436163386559'
+    '_ga' => 'GA1.1.1897110083.1442914906'
+    'CNZZDATA4639431' => 'cnzz_eid=1841090418-1443488937-&ntime=1443495126'
+    '_csrf' => '19875b99233ce67e7d0bc36f8d1d710e7c3e5f80b80a9abd760c748a2b96c8cda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"zgPZoj4XmWBgj86RzKNoFQ5axUzYrfoX\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=article/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1436163386559; _ga=GA1.1.1897110083.1442914906; CNZZDATA4639431=cnzz_eid%3D1841090418-1443488937-%26ntime%3D1443495126; _csrf=19875b99233ce67e7d0bc36f8d1d710e7c3e5f80b80a9abd760c748a2b96c8cda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22zgPZoj4XmWBgj86RzKNoFQ5axUzYrfoX%22%3B%7D'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '50530'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=article%2Faddarticle'
+    'REQUEST_URI' => '/phpblog/admin.php?r=article%2Faddarticle'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1445217192.47
+    'REQUEST_TIME' => 1445217192
+]
+2015-10-19 10:49:08 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: SPATIAL' in F:\myapaphe\www\phpblog\backend\views\database\tablelist.php:110
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render()
+#3 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(23): yii\base\Controller->render()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): backend\controllers\DatabaseController->actionIndex()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#9 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#10 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#11 {main}
+2015-10-19 10:49:08 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/index'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '52685'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=database/index'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/index'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1445222948.131
+    'REQUEST_TIME' => 1445222948
+]
+2015-10-19 16:46:51 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'COMMENT 鏂囩珷鏍囬' at line 1' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:771
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(771): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(80): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'COMMENT 鏂囩珷鏍囬' at line 1
+The SQL being executed was: ALTER TABLE ligao_article CHANGE  title  title  VARCHAR(100)  NULL default  COMMENT 鏂囩珷鏍囬' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(779): yii\db\Schema->convertException(Object(PDOException), 'ALTER TABLE lig...')
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(80): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'COMMENT 鏂囩珷鏍囬' at line 1
+)
+
+2015-10-19 16:46:51 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/columnmodify'
+]
+
+$_POST = [
+    'tableName' => 'ligao_article'
+    'field_name' => 'title'
+    'field_type' => 'VARCHAR'
+    'filed_length' => '100'
+    'field_default' => ''
+    'isnull' => 'NULL'
+    'filed_comment' => '鏂囩珷鏍囬'
+    'old_field_name' => 'title'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=database/'
+    'CONTENT_LENGTH' => '175'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '62699'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=database/columnmodify'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/columnmodify'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1445244411.836
+    'REQUEST_TIME' => 1445244411
+]
+2015-10-19 16:48:31 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'COMMENT '鏂囩珷鏍囬'' at line 1' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:771
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(771): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(80): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'COMMENT '鏂囩珷鏍囬'' at line 1
+The SQL being executed was: ALTER TABLE ligao_article CHANGE  title  title  VARCHAR(100)  NULL default  COMMENT '鏂囩珷鏍囬'' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(779): yii\db\Schema->convertException(Object(PDOException), 'ALTER TABLE lig...')
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(80): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'COMMENT '鏂囩珷鏍囬'' at line 1
+)
+
+2015-10-19 16:48:30 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/columnmodify'
+]
+
+$_POST = [
+    'tableName' => 'ligao_article'
+    'field_name' => 'title'
+    'field_type' => 'VARCHAR'
+    'filed_length' => '100'
+    'field_default' => ''
+    'isnull' => 'NULL'
+    'filed_comment' => '鏂囩珷鏍囬'
+    'old_field_name' => 'title'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=database/'
+    'CONTENT_LENGTH' => '175'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '62748'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=database/columnmodify'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/columnmodify'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1445244510.976
+    'REQUEST_TIME' => 1445244510
+]
+2015-10-19 16:49:15 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1067 Invalid default value for 'title'' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:771
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(771): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(80): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1067 Invalid default value for 'title'
+The SQL being executed was: ALTER TABLE ligao_article CHANGE  title  title  VARCHAR(100)  NOT NULL default NULL COMMENT '鏂囩珷title'' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(779): yii\db\Schema->convertException(Object(PDOException), 'ALTER TABLE lig...')
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(80): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1067
+    [2] => Invalid default value for 'title'
+)
+
+2015-10-19 16:49:15 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/columnmodify'
+]
+
+$_POST = [
+    'tableName' => 'ligao_article'
+    'field_name' => 'title'
+    'field_type' => 'VARCHAR'
+    'filed_length' => '100'
+    'field_default' => 'NONE'
+    'isnull' => 'NOT NULL'
+    'filed_comment' => '鏂囩珷title'
+    'old_field_name' => 'title'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=database/'
+    'CONTENT_LENGTH' => '170'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '62778'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=database/columnmodify'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/columnmodify'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1445244554.992
+    'REQUEST_TIME' => 1445244554
+]
+2015-10-19 16:49:15 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1067 Invalid default value for 'title'' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:771
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(771): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(80): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1067 Invalid default value for 'title'
+The SQL being executed was: ALTER TABLE ligao_article CHANGE  title  title  VARCHAR(100)  NOT NULL default NULL COMMENT '鏂囩珷title'' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(779): yii\db\Schema->convertException(Object(PDOException), 'ALTER TABLE lig...')
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(80): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1067
+    [2] => Invalid default value for 'title'
+)
+
+2015-10-19 16:49:15 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/columnmodify'
+]
+
+$_POST = [
+    'tableName' => 'ligao_article'
+    'field_name' => 'title'
+    'field_type' => 'VARCHAR'
+    'filed_length' => '100'
+    'field_default' => 'NONE'
+    'isnull' => 'NOT NULL'
+    'filed_comment' => '鏂囩珷title'
+    'old_field_name' => 'title'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=database/'
+    'CONTENT_LENGTH' => '170'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '62780'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=database/columnmodify'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/columnmodify'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1445244555.286
+    'REQUEST_TIME' => 1445244555
+]
+2015-10-19 16:49:15 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1067 Invalid default value for 'title'' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:771
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(771): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(80): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1067 Invalid default value for 'title'
+The SQL being executed was: ALTER TABLE ligao_article CHANGE  title  title  VARCHAR(100)  NOT NULL default NULL COMMENT '鏂囩珷title'' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(779): yii\db\Schema->convertException(Object(PDOException), 'ALTER TABLE lig...')
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(80): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1067
+    [2] => Invalid default value for 'title'
+)
+
+2015-10-19 16:49:15 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/columnmodify'
+]
+
+$_POST = [
+    'tableName' => 'ligao_article'
+    'field_name' => 'title'
+    'field_type' => 'VARCHAR'
+    'filed_length' => '100'
+    'field_default' => 'NONE'
+    'isnull' => 'NOT NULL'
+    'filed_comment' => '鏂囩珷title'
+    'old_field_name' => 'title'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=database/'
+    'CONTENT_LENGTH' => '170'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '62782'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=database/columnmodify'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/columnmodify'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1445244555.487
+    'REQUEST_TIME' => 1445244555
+]
+2015-10-19 16:50:22 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'COMMENT '鏂囩珷title'' at line 1' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:771
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(771): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(80): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'COMMENT '鏂囩珷title'' at line 1
+The SQL being executed was: ALTER TABLE ligao_article CHANGE  title  title  VARCHAR(100)  NOT NULL default  COMMENT '鏂囩珷title'' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(779): yii\db\Schema->convertException(Object(PDOException), 'ALTER TABLE lig...')
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(80): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'COMMENT '鏂囩珷title'' at line 1
+)
+
+2015-10-19 16:50:22 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/columnmodify'
+]
+
+$_POST = [
+    'tableName' => 'ligao_article'
+    'field_name' => 'title'
+    'field_type' => 'VARCHAR'
+    'filed_length' => '100'
+    'field_default' => 'NONE'
+    'isnull' => 'NOT NULL'
+    'filed_comment' => '鏂囩珷title'
+    'old_field_name' => 'title'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=database/'
+    'CONTENT_LENGTH' => '170'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '62821'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=database/columnmodify'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/columnmodify'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1445244622.887
+    'REQUEST_TIME' => 1445244622
+]
+2015-10-19 16:50:50 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:771
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(771): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(80): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+The SQL being executed was: ALTER TABLE ligao_article CHANGE  title  title  VARCHAR(100)  NULL default  ' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(779): yii\db\Schema->convertException(Object(PDOException), 'ALTER TABLE lig...')
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(80): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+)
+
+2015-10-19 16:50:50 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/columnmodify'
+]
+
+$_POST = [
+    'tableName' => 'ligao_article'
+    'field_name' => 'title'
+    'field_type' => 'VARCHAR'
+    'filed_length' => '100'
+    'field_default' => 'NONE'
+    'isnull' => 'NULL'
+    'filed_comment' => ''
+    'old_field_name' => 'title'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=database/'
+    'CONTENT_LENGTH' => '143'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '62846'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=database/columnmodify'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/columnmodify'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1445244650.365
+    'REQUEST_TIME' => 1445244650
+]
+2015-10-19 16:58:54 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '鏂囩珷title' at line 1' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:771
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(771): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(80): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '鏂囩珷title' at line 1
+The SQL being executed was: ALTER TABLE ligao_article CHANGE  title  title  VARCHAR(100)  NULL default NULL COMMENT 鏂囩珷title' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(779): yii\db\Schema->convertException(Object(PDOException), 'ALTER TABLE lig...')
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(80): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '鏂囩珷title' at line 1
+)
+
+2015-10-19 16:58:54 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/columnmodify'
+]
+
+$_POST = [
+    'tableName' => 'ligao_article'
+    'field_name' => 'title'
+    'field_type' => 'VARCHAR'
+    'filed_length' => '100'
+    'field_default' => 'NONE'
+    'isnull' => 'NULL'
+    'filed_comment' => '鏂囩珷title'
+    'old_field_name' => 'title'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=database/'
+    'CONTENT_LENGTH' => '166'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '63149'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=database/columnmodify'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/columnmodify'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1445245134.086
+    'REQUEST_TIME' => 1445245134
+]
+2015-10-19 17:00:27 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '鏂囩珷title' at line 1' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:771
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(771): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(81): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '鏂囩珷title' at line 1
+The SQL being executed was: ALTER TABLE ligao_article CHANGE  title  title  VARCHAR(100)  NULL default NULL COMMENT 鏂囩珷title' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(779): yii\db\Schema->convertException(Object(PDOException), 'ALTER TABLE lig...')
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(81): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '鏂囩珷title' at line 1
+)
+
+2015-10-19 17:00:27 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/columnmodify'
+]
+
+$_POST = [
+    'tableName' => 'ligao_article'
+    'field_name' => 'title'
+    'field_type' => 'VARCHAR'
+    'filed_length' => '100'
+    'field_default' => 'NONE'
+    'isnull' => 'NULL'
+    'filed_comment' => '鏂囩珷title'
+    'old_field_name' => 'title'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=database/'
+    'CONTENT_LENGTH' => '166'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '63214'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=database/columnmodify'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/columnmodify'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1445245227.831
+    'REQUEST_TIME' => 1445245227
+]
+2015-10-19 17:04:10 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '鏂囩珷鏍囬' at line 1' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:771
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(771): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(81): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '鏂囩珷鏍囬' at line 1
+The SQL being executed was: ALTER TABLE ligao_article CHANGE  title  title  VARCHAR(100)  NULL default NULL COMMENT 鏂囩珷鏍囬' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(779): yii\db\Schema->convertException(Object(PDOException), 'ALTER TABLE lig...')
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(81): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '鏂囩珷鏍囬' at line 1
+)
+
+2015-10-19 17:04:10 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/columnmodify'
+]
+
+$_POST = [
+    'tableName' => 'ligao_article'
+    'field_name' => 'title'
+    'field_type' => 'VARCHAR'
+    'filed_length' => '100'
+    'field_default' => 'NONE'
+    'isnull' => 'NULL'
+    'filed_comment' => '鏂囩珷鏍囬'
+    'old_field_name' => 'title'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=database/'
+    'CONTENT_LENGTH' => '179'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '63456'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=database/columnmodify'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/columnmodify'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1445245450.495
+    'REQUEST_TIME' => 1445245450
+]
+2015-10-19 17:06:35 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '鏂囩珷鏍囬' at line 1' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:771
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(771): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(81): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '鏂囩珷鏍囬' at line 1
+The SQL being executed was: ALTER TABLE ligao_article CHANGE  title  title  VARCHAR(100)   default NULL COMMENT 鏂囩珷鏍囬' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(779): yii\db\Schema->convertException(Object(PDOException), 'ALTER TABLE lig...')
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(81): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '鏂囩珷鏍囬' at line 1
+)
+
+2015-10-19 17:06:35 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/columnmodify'
+]
+
+$_POST = [
+    'tableName' => 'ligao_article'
+    'field_name' => 'title'
+    'field_type' => 'VARCHAR'
+    'filed_length' => '100'
+    'field_default' => 'NONE'
+    'filed_comment' => '鏂囩珷鏍囬'
+    'old_field_name' => 'title'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=database/'
+    'CONTENT_LENGTH' => '167'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '63686'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=database/columnmodify'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/columnmodify'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1445245595.572
+    'REQUEST_TIME' => 1445245595
+]
+2015-10-19 17:07:19 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '鏂囩珷鏍囬' at line 1' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:771
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(771): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(81): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '鏂囩珷鏍囬' at line 1
+The SQL being executed was: ALTER TABLE ligao_article CHANGE  title  title  VARCHAR(100)   default NULL COMMENT 鏂囩珷鏍囬 ' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(779): yii\db\Schema->convertException(Object(PDOException), 'ALTER TABLE lig...')
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(81): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '鏂囩珷鏍囬' at line 1
+)
+
+2015-10-19 17:07:19 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/columnmodify'
+]
+
+$_POST = [
+    'tableName' => 'ligao_article'
+    'field_name' => 'title'
+    'field_type' => 'VARCHAR'
+    'filed_length' => '100'
+    'field_default' => 'NONE'
+    'filed_comment' => '鏂囩珷鏍囬'
+    'old_field_name' => 'title'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=database/'
+    'CONTENT_LENGTH' => '167'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '63719'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=database/columnmodify'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/columnmodify'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1445245639.085
+    'REQUEST_TIME' => 1445245639
+]
+2015-10-19 17:08:27 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '鏂囩珷鏍囬' at line 1' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:771
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(771): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(81): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '鏂囩珷鏍囬' at line 1
+The SQL being executed was: ALTER TABLE ligao_article CHANGE  title  title  VARCHAR(100)   default NULL COMMENT 鏂囩珷鏍囬 ' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(779): yii\db\Schema->convertException(Object(PDOException), 'ALTER TABLE lig...')
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(81): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '鏂囩珷鏍囬' at line 1
+)
+
+2015-10-19 17:08:27 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/columnmodify'
+]
+
+$_POST = [
+    'tableName' => 'ligao_article'
+    'field_name' => 'title'
+    'field_type' => 'VARCHAR'
+    'filed_length' => '100'
+    'field_default' => 'NONE'
+    'filed_comment' => '鏂囩珷鏍囬'
+    'old_field_name' => 'title'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=database/'
+    'CONTENT_LENGTH' => '167'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '63745'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=database/columnmodify'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/columnmodify'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1445245707.437
+    'REQUEST_TIME' => 1445245707
+]
+2015-10-19 17:11:18 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '鏂囩珷鏍囬' at line 1' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:771
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(771): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(84): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '鏂囩珷鏍囬' at line 1
+The SQL being executed was: ALTER TABLE ligao_article CHANGE  title  title  VARCHAR(100)   default NULL COMMENT 鏂囩珷鏍囬 ' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(779): yii\db\Schema->convertException(Object(PDOException), 'ALTER TABLE lig...')
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(84): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '鏂囩珷鏍囬' at line 1
+)
+
+2015-10-19 17:11:18 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/columnmodify'
+]
+
+$_POST = [
+    'tableName' => 'ligao_article'
+    'field_name' => 'title'
+    'field_type' => 'VARCHAR'
+    'filed_length' => '100'
+    'field_default' => 'NONE'
+    'filed_comment' => '鏂囩珷鏍囬'
+    'old_field_name' => 'title'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=database/'
+    'CONTENT_LENGTH' => '167'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '63813'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=database/columnmodify'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/columnmodify'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1445245878.684
+    'REQUEST_TIME' => 1445245878
+]
+2015-10-19 17:12:32 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '鏂囩珷鏍囬' at line 1' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:771
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(771): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(81): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '鏂囩珷鏍囬' at line 1
+The SQL being executed was: ALTER TABLE ligao_article CHANGE  title  title  VARCHAR(100)   default NULL COMMENT 鏂囩珷鏍囬 ' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(779): yii\db\Schema->convertException(Object(PDOException), 'ALTER TABLE lig...')
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(81): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '鏂囩珷鏍囬' at line 1
+)
+
+2015-10-19 17:12:32 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/columnmodify'
+]
+
+$_POST = [
+    'tableName' => 'ligao_article'
+    'field_name' => 'title'
+    'field_type' => 'VARCHAR'
+    'filed_length' => '100'
+    'field_default' => 'NONE'
+    'filed_comment' => '鏂囩珷鏍囬'
+    'old_field_name' => 'title'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=database/'
+    'CONTENT_LENGTH' => '167'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '63860'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=database/columnmodify'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/columnmodify'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1445245952.897
+    'REQUEST_TIME' => 1445245952
+]
+2015-10-19 17:13:34 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '鏂囩珷' at line 1' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:771
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(771): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(81): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '鏂囩珷' at line 1
+The SQL being executed was: ALTER TABLE ligao_article CHANGE  title  title  VARCHAR(100)   default NULL COMMENT 鏂囩珷 ' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(779): yii\db\Schema->convertException(Object(PDOException), 'ALTER TABLE lig...')
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(81): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '鏂囩珷' at line 1
+)
+
+2015-10-19 17:13:34 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/columnmodify'
+]
+
+$_POST = [
+    'tableName' => 'ligao_article'
+    'field_name' => 'title'
+    'field_type' => 'VARCHAR'
+    'filed_length' => '100'
+    'field_default' => 'NONE'
+    'filed_comment' => '鏂囩珷'
+    'old_field_name' => 'title'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=database/'
+    'CONTENT_LENGTH' => '149'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '63901'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=database/columnmodify'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/columnmodify'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1445246014.127
+    'REQUEST_TIME' => 1445246014
+]
+2015-10-19 17:17:31 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '{'' in F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php:78
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::spl_autoload_call()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::class_exists()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(521): yii\base\Module->createControllerByID()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(449): yii\base\Module->createController()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#7 {main}
+2015-10-19 17:17:31 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '64446'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=database/'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1445246251.369
+    'REQUEST_TIME' => 1445246251
+]
+2015-10-19 17:17:44 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$filed_comment' (T_VARIABLE)' in F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php:78
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::spl_autoload_call()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::class_exists()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(521): yii\base\Module->createControllerByID()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(449): yii\base\Module->createController()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#7 {main}
+2015-10-19 17:17:44 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '64452'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=database/'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1445246264.122
+    'REQUEST_TIME' => 1445246264
+]
+2015-10-19 17:17:44 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$filed_comment' (T_VARIABLE)' in F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php:78
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::spl_autoload_call()
+#1 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(563): ::class_exists()
+#2 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(521): yii\base\Module->createControllerByID()
+#3 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(449): yii\base\Module->createController()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#6 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#7 {main}
+2015-10-19 17:17:44 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '64453'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=database/'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1445246264.786
+    'REQUEST_TIME' => 1445246264
+]
+2015-10-19 17:40:48 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1067 Invalid default value for 'id'' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:771
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(771): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(80): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1067 Invalid default value for 'id'
+The SQL being executed was: ALTER TABLE ligao_article CHANGE  id  id  INT(11)  NOT NULL default NULL COMMENT '涓婚敭' ' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(779): yii\db\Schema->convertException(Object(PDOException), 'ALTER TABLE lig...')
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(80): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1067
+    [2] => Invalid default value for 'id'
+)
+
+2015-10-19 17:40:47 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/columnmodify'
+]
+
+$_POST = [
+    'tableName' => 'ligao_article'
+    'field_name' => 'id'
+    'field_type' => 'INT'
+    'filed_length' => '11'
+    'field_default' => 'NONE'
+    'isnull' => 'NOT NULL'
+    'field_comment' => '涓婚敭'
+    'old_field_name' => 'id'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=database/'
+    'CONTENT_LENGTH' => '154'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '64960'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=database/columnmodify'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/columnmodify'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1445247647.932
+    'REQUEST_TIME' => 1445247647
+]
+2015-10-19 17:40:49 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1067 Invalid default value for 'id'' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:771
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(771): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(80): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1067 Invalid default value for 'id'
+The SQL being executed was: ALTER TABLE ligao_article CHANGE  id  id  INT(11)  NOT NULL default NULL COMMENT '涓婚敭' ' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(779): yii\db\Schema->convertException(Object(PDOException), 'ALTER TABLE lig...')
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(80): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1067
+    [2] => Invalid default value for 'id'
+)
+
+2015-10-19 17:40:49 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/columnmodify'
+]
+
+$_POST = [
+    'tableName' => 'ligao_article'
+    'field_name' => 'id'
+    'field_type' => 'INT'
+    'filed_length' => '11'
+    'field_default' => 'NONE'
+    'isnull' => 'NOT NULL'
+    'field_comment' => '涓婚敭'
+    'old_field_name' => 'id'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=database/'
+    'CONTENT_LENGTH' => '154'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '64962'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=database/columnmodify'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/columnmodify'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1445247649.495
+    'REQUEST_TIME' => 1445247649
+]
+2015-10-19 17:40:52 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1067 Invalid default value for 'id'' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php:771
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(771): PDOStatement->execute()
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(80): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1067 Invalid default value for 'id'
+The SQL being executed was: ALTER TABLE ligao_article CHANGE  id  id  INT(11)  NOT NULL default NULL COMMENT '涓婚敭' ' in F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\db\Command.php(779): yii\db\Schema->convertException(Object(PDOException), 'ALTER TABLE lig...')
+#1 F:\myapaphe\www\phpblog\common\models\Database.php(86): yii\db\Command->execute()
+#2 F:\myapaphe\www\phpblog\backend\controllers\DatabaseController.php(80): common\models\Database::executeSQL('ALTER TABLE lig...')
+#3 [internal function]: backend\controllers\DatabaseController->actionColumnmodify()
+#4 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('columnmodify', Array)
+#7 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('database/column...', Array)
+#8 F:\myapaphe\www\phpblog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\myapaphe\www\phpblog\admin.php(23): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1067
+    [2] => Invalid default value for 'id'
+)
+
+2015-10-19 17:40:52 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'database/columnmodify'
+]
+
+$_POST = [
+    'tableName' => 'ligao_article'
+    'field_name' => 'id'
+    'field_type' => 'INT'
+    'filed_length' => '11'
+    'field_default' => 'NONE'
+    'isnull' => 'NOT NULL'
+    'field_comment' => '涓婚敭'
+    'old_field_name' => 'id'
+]
+
+$_COOKIE = [
+    'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62' => '1436162841'
+    'bdshare_firstime' => '1436163241366'
+    '_csrf' => 'bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/phpblog/admin.php?r=database/'
+    'CONTENT_LENGTH' => '154'
+    'HTTP_COOKIE' => 'Hm_lvt_7b43330a4da4a6f4353e553988ee8a62=1436162841; bdshare_firstime=1436163241366; _csrf=bb30b6e828f7c6b4bb43ed500cdb00b9664196836344c9de6797b3a32a05a26da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22XG_gztLxMtLdFSiBUfjUkmdenPOCQZ44%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'E:\\Program Files (x86)\\ImageMagick-6.8.6-Q16;E:\\Python\\;E:\\Python\\Scripts;D:\\myapaphe\\php\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\Program Files (x86)\\python;E:\\Program Files (x86)\\python\\Scripts;C:\\ProgramData\\ComposerSetup\\bin;F:\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.6.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/myapaphe/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'F:/myapaphe/www/phpblog/admin.php'
+    'REMOTE_PORT' => '64965'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=database/columnmodify'
+    'REQUEST_URI' => '/phpblog/admin.php?r=database/columnmodify'
+    'SCRIPT_NAME' => '/phpblog/admin.php'
+    'PHP_SELF' => '/phpblog/admin.php'
+    'REQUEST_TIME_FLOAT' => 1445247652.72
+    'REQUEST_TIME' => 1445247652
+]

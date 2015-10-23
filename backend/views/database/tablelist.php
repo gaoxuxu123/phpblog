@@ -2,7 +2,7 @@
 use yii\helpers\Html;
 use backend\assets\AppAsset;
 use yii\helpers\Url;
-$this->title = '文章分类列表';
+$this->title = '数据库列表';
 AppAsset::register($this);
 AppAsset::addScript($this,WEBPATH.'/scripts/js/database.js');
 ?>
@@ -25,11 +25,8 @@ AppAsset::addScript($this,WEBPATH.'/scripts/js/database.js');
 
 	<div class="easyui-layout" style="width:100%;height:600px;">
 		<div region="west" split="true" title="数据表" iconCls="icon r5_c7" style="width:200px;">
-			
-			<ul>
-				
+			<ul>				
 				<?php foreach ($tables as $key => $v): ?>
-
 					<li>
 					<a href="javascript:void(0)" onclick="showcontent('<?php echo $v['Tables_in_phpblog']; ?>')"><span class="icon r8_c1">&nbsp;</span><span><?php echo $v['Tables_in_phpblog']; ?></span>
 					</a>
@@ -51,14 +48,14 @@ AppAsset::addScript($this,WEBPATH.'/scripts/js/database.js');
 				<th data-options="field:'Default',align:'center',formatter:defaultformater"  width="10%">默认值</th>
 				<th data-options="field:'Extra',align:'center'"  width="10%">额外</th>
 				<th data-options="field:'Comment',align:'center'" width="15%">注释</th>
-				<th data-options="field:'mamager',align:'center'" width="10%">操作</th>
+				<th data-options="field:'mamager',align:'center',formatter:managerformater" width="10%">操作</th>
 			</tr>
 		</thead>
 	</table>
 	<div style="padding:5px;background:#fafafa;width:99.3%;border:1px solid #ccc">
 		<a href="#" class="easyui-linkbutton" iconCls="icon-cancel">删除选中</a>
 		<a href="#" class="easyui-linkbutton" iconCls="icon-cancel">删除表</a>
-		<a href="#" class="easyui-linkbutton" iconCls="icon-reload">刷新</a>
+		<a href="javascript:void(0)" class="easyui-linkbutton" onclick="javascript:window.location.reload()" iconCls="icon-reload">刷新</a>
 		<a href="#" class="easyui-linkbutton" iconCls="icon-add">添加字段</a>
 		<a href="#" class="easyui-linkbutton" iconCls="icon r17_c12">执行SQL语句</a>
 		<a href="#" class="easyui-linkbutton" iconCls="icon-print">打印表结构</a>
@@ -75,11 +72,82 @@ AppAsset::addScript($this,WEBPATH.'/scripts/js/database.js');
 				<th data-options="field:'Auto_increment',align:'center'" width="10%">下一个自增值</th>
 				<th data-options="field:'Create_time',align:'center'" width="10%">创建时间</th>
 				<th data-options="field:'Update_time',align:'center'"  width="10%">最后更新</th>
-				
 			</tr>
 		</thead>
 	</table>
     </div>
+</div>
+<div id="modify" class="easyui-window" title="字段修改" closed="true" style="width:300px;height:400px;padding:5px;" align="left" >
+		<input type="hidden" name="tableName" id="tableName" value="ligao_article">
+		<input type="hidden" name="old_field_name" id="old_field_name" >
+		<p>
+				
+			<label>字段名:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+			<input type="text" name="field_name" id="field_name" >		
+
+		</p>
+		<p>
+			<label>字段类型:&nbsp;&nbsp;</label>
+			<select name="field_type" id="field_type">
+
+				<?php foreach ($dbtype['usually'] as $k=>$v) :?>
+					<option value="<?php echo $v; ?>"><?php echo $v; ?></option>
+				<?php endforeach;?>	
+				<optgroup label="NUMERIC">
+				<?php foreach ($dbtype['NUMERIC'] as $k=>$v) :?>
+					<option value="<?php echo $v; ?>"><?php echo $v; ?></option>
+				<?php endforeach;?>	
+				</optgroup>
+				<optgroup label="DATE and TIME">
+				<?php foreach ($dbtype['DATE and TIME'] as $k=>$v) :?>
+					<option value="<?php echo $v; ?>"><?php echo $v; ?></option>
+				<?php endforeach;?>						
+				</optgroup>
+				<optgroup label="STRING">
+				<?php foreach ($dbtype['STRING'] as $k=>$v) :?>
+					<option value="<?php echo $v; ?>"><?php echo $v; ?></option>
+				<?php endforeach;?>		
+				</optgroup>
+				<optgroup label="SPATIAL">
+				<?php foreach ($dbtype['SPATIAL'] as $k=>$v) :?>
+					<option value="<?php echo $v; ?>"><?php echo $v; ?></option>
+				<?php endforeach;?>		
+				</optgroup>
+			</select>
+		</p>
+		<p>
+			<label>字段长度:&nbsp;&nbsp;</label>
+			<input type="text" name="filed_length" id="filed_length">
+		</p>
+		<p>
+			<label>默认值:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+			<select name="field_default" id="field_default">
+				<option value="NONE">无</option>
+				<option value="USER_DEFINED" >定义:</option>
+				<option value="NULL">NULL</option>
+			</select>
+			<br><br>
+			<input type="text" name="userfiled" id="userfiled" style="display: none;margin-left:62px" >
+		</p>
+		<p>
+			<label>是否为空:</label>
+			<input type="radio" value="NULL" name="isnull" id="isnull1">空
+			 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="radio" value="NOT NULL" name="isnull" id="isnull2">不为空
+		</p>
+		<p>
+			<label>自动递增:&nbsp;&nbsp;</label>
+			<input type="checkbox" name="auto_increment" id="auto_increment" >
+		</p>
+		<p>
+			<label>注释:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+			<input type="text" name="field_comment" id="field_comment" value="">
+		</p>
+		<div style="margin-left:62px">
+			<a href="javascript:void(0)" class="easyui-linkbutton submit"  data-options="iconCls:'icon-ok'">保存</a>
+			<a href="javascript:void(0)" class="easyui-linkbutton"  data-options="iconCls:'icon-cancel'">取消</a>
+		</div>
+		
 </div>
 
  <?php $this->endBody() ?>

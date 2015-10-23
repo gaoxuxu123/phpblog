@@ -72,7 +72,20 @@ use common\base\BaseActiveRecord;
 					$ret          = $command->queryAll();
 					return $ret;
 				}
+		}
+		/**
+		 * 执行SQL语句
+		 */
+		public static function executeSQL($sql = null){
 
+			if($sql == null){
+
+				return false;
+			}
+			else{
+					 return self::$connection->createCommand($sql)->execute();
+
+			}
 		}
 
 }

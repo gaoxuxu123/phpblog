@@ -28,10 +28,56 @@
                 toolbar:[]
             }); 
 
+            $("#field_default").change(function(){
+                
+                    if($(this).val() == 'USER_DEFINED'){
+
+                        $("#userfiled").css('display','block');
+                    }else{
+                        $("#userfiled").css('display','none');
+                    }                
+            });
+            $(".submit").click(function(){
+
+                    var field_default  = $("#field_default").val();
+                    var auto_increment = $("#auto_increment").attr("checked");
+                    var inc = '0';
+                    if(auto_increment){
+                         inc = '1';   
+                    }
+                    if(field_default == 'USER_DEFINED'){
+
+                        field_default = $("#userfiled").val();
+                    }
+                    $.post(
+                                "admin.php?r=database/columnmodify",
+                                {
+                                    tableName:$("#tableName").val(),
+                                    field_name:$("#field_name").val(),
+                                    field_type:$("#field_type").val(),
+                                    filed_length:$("#filed_length").val(),
+                                    field_default:$("#field_default").val(),
+                                    isnull:$('input[name="isnull"]:checked ').val(),
+                                    field_comment:$("#field_comment").val(),
+                                     old_field_name:$("#old_field_name").val(),
+                                     field_default:field_default,
+                                     auto_increment:inc
+                                },
+                                function (data){
+
+                                    $.messager.alert('消息',data.content);
+                                    $('#table').datagrid('reload'); 
+                                    $("#modify").dialog('close');    
+                                },
+                                "json"
+                        );
+                });
+
         });
 
     function showcontent(table){
         
+        $("#tableName").val(table);
         $('#table').datagrid({url:"admin.php?r=database/tabcolumninfos&tableName="+table});
         $('#table').datagrid('reload'); 
         $('#table1').datagrid({url:"admin.php?r=database/tabinfos&tableName="+table});
@@ -110,4 +156,53 @@
 
         var length = row.Data_free;
         return (length/1024).toFixed(2)+"kb";
+    }
+    function managerformater(value,row,index){
+
+        return "<a href='javascript:void(0)' onclick=modify('"+row.Field+"','"+row.Type+"','"+row.Default+"','"+row.Comment+"','"+row.Extra+"','"+row.Null+"') class='easyui-linkbutton' iconCls='icon-reload'>修改</a>";
+    }
+    function modify(Field,Type,Default,Comment,Extra,Null){
+
+        $("#field_name").val(Field);
+        $("#old_field_name").val(Field);
+        $("#field_comment").val(Comment);
+        if(Extra){
+
+            $("#auto_increment").attr("checked",true);
+        }else{
+            $("#auto_increment").attr("checked",false);
+        }
+        if(Null){
+
+            $("#isnull2").attr("checked",true);
+        }else{
+            $("#isnull2").attr("checked",false);
+            $("#isnull1").attr("checked",true);
+        }
+        var type;
+        var length;
+        if(Type.indexOf("(") > 0){
+             type =  Type.split("(");
+             length = type[1].split(")");
+            type = type[0].toUpperCase(); 
+        }else{
+            type = Type.toUpperCase();
+            length = '0';
+        }
+        
+        
+        $("#field_type option[value!='"+type+"']").attr("selected",false);
+        $("#field_type option[value='"+type+"']").attr("selected",true);
+        $("#filed_length").val(length[0]);
+        if(Default != "null"){
+            $("#field_default option[value='USER_DEFINED']").attr("selected",true);
+            $("#userfiled").css('display','block');
+            $("#userfiled").val(Default);
+
+        }else{
+
+
+        }      
+        $("#modify").dialog('open');
+
     }

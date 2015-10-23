@@ -33,5 +33,12 @@ return [
 
                           ]
                 ]
+          ],
+          'dbtype'=>[
+                      'usually'=>['INT','VARCHAR','TEXT','CHAR','FLOAT','DOUBLE'],
+                      'NUMERIC'=>['TINYINT','SMALLINT','MEDIUMINT','BIGINT','DECIMAL','REAL','BIT','BOOLEAN','SERIAL'],
+                      'DATE and TIME'=>['DATE','DATETIME','TIMESTAMP','TIME','YEAR'],
+                      'STRING'=>['TINYTEXT','MEDIUMTEXT','LONGTEXT','BINARY','VARBINARY','TINYBLOB','MEDIUMBLOB','BLOB','LONGBLOB','ENUM','SET'],
+                      'SPATIAL'=>['GEOMETRY','POINT','LINESTRING','POLYGON','MULTIPOINT','MULTILINESTRING','MULTIPOLYGON','GEOMETRYCOLLECTION']
           ]
 ];
