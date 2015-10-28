@@ -15,7 +15,7 @@ use common\base\BaseActiveRecord;
  		public function __construct(){
 
  			parent::__construct();
- 			self::$connection =  \Yii::$app->db;
+ 			self::$connection =  static::getDb();
 
  		}
  		public static function tableName(){
