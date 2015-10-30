@@ -9,7 +9,7 @@ use common\models\Database;
  class DatabaseController extends Controller
  {
  		public $layout = false; //不使用布局
- 		public  $enableCsrfValidation=false;
+ 		public  $enableCsrfValidation=false;//关闭csrf
 
 
  		public function actionIndex(){

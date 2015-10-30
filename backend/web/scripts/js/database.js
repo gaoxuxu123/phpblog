@@ -73,11 +73,27 @@
                         );
                 });
 
+
+               $(".columnAdd").click(function(){
+
+
+                        $("#add").dialog('open');
+               }); 
+               $(".addColumn").click(function(){
+
+
+                        //$.messager.alert('消息','sss');
+                       
+
+
+               });
+
         });
 
     function showcontent(table){
         
         $("#tableName").val(table);
+        $("#tableName_1").val(table);
         $('#table').datagrid({url:"admin.php?r=database/tabcolumninfos&tableName="+table});
         $('#table').datagrid('reload'); 
         $('#table1').datagrid({url:"admin.php?r=database/tabinfos&tableName="+table});

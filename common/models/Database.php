@@ -6,7 +6,7 @@ use yii\db\ActiveRecord;
 use common\base\BaseActiveRecord;
 
  /**
- * 文章数据操作类
+ * 数据库操作类
  */
  class Database extends BaseActiveRecord
  {
@@ -53,6 +53,7 @@ use common\base\BaseActiveRecord;
 			else{
 
 				$command      = self::$connection->createCommand('SHOW FULL COLUMNS FROM '.$table);
+
 				$ret          = $command->queryAll();
 				return $ret;
 			}
@@ -68,7 +69,8 @@ use common\base\BaseActiveRecord;
 				}
 				else{
 
-					$command      = self::$connection->createCommand("SHOW TABLE STATUS FROM phpblog WHERE Name = '{$table}'");
+					$command      = self::$connection->createCommand("SHOW TABLE STATUS FROM phpblog WHERE Name = :name");
+					$command->bindValue(':name', $table);
 					$ret          = $command->queryAll();
 					return $ret;
 				}

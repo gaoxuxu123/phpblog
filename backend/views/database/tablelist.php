@@ -56,7 +56,7 @@ AppAsset::addScript($this,WEBPATH.'/scripts/js/database.js');
 		<a href="#" class="easyui-linkbutton" iconCls="icon-cancel">删除选中</a>
 		<a href="#" class="easyui-linkbutton" iconCls="icon-cancel">删除表</a>
 		<a href="javascript:void(0)" class="easyui-linkbutton" onclick="javascript:window.location.reload()" iconCls="icon-reload">刷新</a>
-		<a href="#" class="easyui-linkbutton" iconCls="icon-add">添加字段</a>
+		<a href="javascript:void(0)" class="easyui-linkbutton columnAdd" iconCls="icon-add">添加字段</a>
 		<a href="#" class="easyui-linkbutton" iconCls="icon r17_c12">执行SQL语句</a>
 		<a href="#" class="easyui-linkbutton" iconCls="icon-print">打印表结构</a>
 	</div>
@@ -146,10 +146,88 @@ AppAsset::addScript($this,WEBPATH.'/scripts/js/database.js');
 		<div style="margin-left:62px">
 			<a href="javascript:void(0)" class="easyui-linkbutton submit"  data-options="iconCls:'icon-ok'">保存</a>
 			<a href="javascript:void(0)" class="easyui-linkbutton"  data-options="iconCls:'icon-cancel'">取消</a>
-		</div>
-		
+		</div>		
 </div>
+<div id="add" class="easyui-window" title="字段添加" closed="true" style="width:300px;height:400px;padding:5px;" align="left" >
+		<input type="hidden" name="tableName" id="tableName_1" value="ligao_article">
+		<p>
+				
+			<label>字段名:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+			<input type="text" name="field_name" id="field_name_1" >		
 
+		</p>
+		<p>
+			<label>字段类型:&nbsp;&nbsp;</label>
+			<select name="field_type" id="field_type_1">
+
+				<?php foreach ($dbtype['usually'] as $k=>$v) :?>
+					<option value="<?php echo $v; ?>"><?php echo $v; ?></option>
+				<?php endforeach;?>	
+				<optgroup label="NUMERIC">
+				<?php foreach ($dbtype['NUMERIC'] as $k=>$v) :?>
+					<option value="<?php echo $v; ?>"><?php echo $v; ?></option>
+				<?php endforeach;?>	
+				</optgroup>
+				<optgroup label="DATE and TIME">
+				<?php foreach ($dbtype['DATE and TIME'] as $k=>$v) :?>
+					<option value="<?php echo $v; ?>"><?php echo $v; ?></option>
+				<?php endforeach;?>						
+				</optgroup>
+				<optgroup label="STRING">
+				<?php foreach ($dbtype['STRING'] as $k=>$v) :?>
+					<option value="<?php echo $v; ?>"><?php echo $v; ?></option>
+				<?php endforeach;?>		
+				</optgroup>
+				<optgroup label="SPATIAL">
+				<?php foreach ($dbtype['SPATIAL'] as $k=>$v) :?>
+					<option value="<?php echo $v; ?>"><?php echo $v; ?></option>
+				<?php endforeach;?>		
+				</optgroup>
+			</select>
+		</p>
+		<p>
+			<label>字段长度:&nbsp;&nbsp;</label>
+			<input type="text" name="filed_length" id="filed_length_1">
+		</p>
+		<p>
+			<label>默认值:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+			<select name="field_default" id="field_default_1">
+				<option value="NONE">无</option>
+				<option value="USER_DEFINED" >定义:</option>
+				<option value="NULL">NULL</option>
+			</select>
+			<br><br>
+			<input type="text" name="userfiled" id="userfiled_1" style="display: none;margin-left:62px" >
+		</p>
+		<p>
+			<label>是否为空:</label>
+			<input type="radio" value="NULL" name="isnull_1" id="isnull1">空
+			 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="radio" value="NOT NULL" name="isnull_1" id="isnull2">不为空
+		</p>
+		<p>
+			<label>索引：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+			<select id="index" >
+					<option value="">----</option>
+					<option value="PRIMARY">主键索引</option>
+					<option value="UNIQUE">唯一索引</option>
+					<option value="INDEX">普通索引</option>
+					<option value="FULLTEXT">全文索引</option>
+			</select>
+		</p>
+		<p>
+			<label>自动递增:&nbsp;&nbsp;</label>
+			<input type="checkbox" name="auto_increment" id="auto_increment_1" >
+		</p>
+		<p>
+			<label>注释:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+			<input type="text" name="field_comment" id="field_comment_1" value="">
+		</p>
+		<div style="margin-left:62px">
+			<a href="javascript:void(0)" class="easyui-linkbutton addColumn"  data-options="iconCls:'icon-ok'">保存</a>
+			<a href="javascript:void(0)" class="easyui-linkbutton"  data-options="iconCls:'icon-cancel'">取消</a>
+		</div>		
+</div>
  <?php $this->endBody() ?>
 </body>
 </html>
