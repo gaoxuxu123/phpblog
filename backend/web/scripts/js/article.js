@@ -8,7 +8,7 @@
                 autoRowHeight: false,
                 border:true,
                 collapsible:true,
-                url:"admin.php?r=article/articlelistjson", //服务器地址,返回json格式数据
+                url:"articlelistjson", //服务器地址,返回json格式数据
                 loadMsg:'正在加载数据...',
                 frozenColumns:[[
                     {field:'ck',width:80,checkbox:true}
@@ -60,7 +60,7 @@
                                     
                                 var iHeight = 700;
                                 var iWidth = 800;
-                                var url= "admin.php?r=article/articledetail"+"&id="+selected.id;
+                                var url= selected.id+".html";
                                 var name='';
                                 var iTop = (window.screen.availHeight-30-iHeight)/2;       //获得窗口的垂直位置;
                                 var iLeft = (window.screen.availWidth-10-iWidth)/2;           //获得窗口的水平位置;

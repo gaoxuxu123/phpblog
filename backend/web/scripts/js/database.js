@@ -6,7 +6,7 @@
                 autoRowHeight: false,
                 border:true,
                 collapsible:true,
-                url:"admin.php?r=database/tabcolumninfos&tableName=ligao_article", //服务器地址,返回json格式数据
+                url:"tabcolumninfos/ligao_article", //服务器地址,返回json格式数据
                 loadMsg:'正在加载数据...',
                 frozenColumns:[[
                     {field:'ck',width:80,checkbox:true}
@@ -22,7 +22,7 @@
                 autoRowHeight: false,
                 border:true,
                 collapsible:true,
-                url:"admin.php?r=database/tabinfos&tableName=ligao_article", //服务器地址,返回json格式数据
+                url:"tabinfos/ligao_article", //服务器地址,返回json格式数据
                 loadMsg:'正在加载数据...',
                 pagination:false,  //分页控件
                 toolbar:[]
@@ -50,7 +50,7 @@
                         field_default = $("#userfiled").val();
                     }
                     $.post(
-                                "admin.php?r=database/columnmodify",
+                                "columnmodify",
                                 {
                                     tableName:$("#tableName").val(),
                                     field_name:$("#field_name").val(),
@@ -94,9 +94,9 @@
         
         $("#tableName").val(table);
         $("#tableName_1").val(table);
-        $('#table').datagrid({url:"admin.php?r=database/tabcolumninfos&tableName="+table});
+        $('#table').datagrid({url:table});
         $('#table').datagrid('reload'); 
-        $('#table1').datagrid({url:"admin.php?r=database/tabinfos&tableName="+table});
+        $('#table1').datagrid({url:table});
         $('#table1').datagrid('reload'); 
     }
     function typeformater(value,row,index){

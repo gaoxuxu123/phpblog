@@ -7,7 +7,7 @@
                 autoRowHeight: false,
                 border:true,
                 collapsible:true,
-                url:"admin.php?r=task/tasklistjson", //服务器地址,返回json格式数据
+                url:"tasklistjson", //服务器地址,返回json格式数据
                 loadMsg:'正在加载数据...',
                 frozenColumns:[[
                     {field:'ck',width:80,checkbox:true}
@@ -29,7 +29,7 @@
                                     ids.push(rows[i].id);
                                 }
                               $.post(
-                                    "admin.php?r=task/taskdelete",
+                                    "taskdelete",
                                     {
                                       ids:ids.join(',')      
                                     },
@@ -119,7 +119,7 @@
      function start(id){
 
         $.post(
-                "admin.php?r=task/taskdo",
+                "taskdo",
                 {id:id},
                 function (){
 
@@ -133,7 +133,7 @@
      }
      function down(id){
 
-        location.href="admin.php?r=task/taskdownload&id="+id;    
+        location.href=id;    
      }
       function Reflash(){
 

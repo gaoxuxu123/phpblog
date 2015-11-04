@@ -7,7 +7,7 @@
                 autoRowHeight: false,
                 border:true,
                 collapsible:true,
-                url:"admin.php?r=articleclass/articleclasslistjson", //服务器地址,返回json格式数据
+                url:"articleclasslistjson", //服务器地址,返回json格式数据
                 loadMsg:'正在加载数据...',
                 frozenColumns:[[
                     {field:'ck',width:80,checkbox:true}
@@ -41,7 +41,7 @@
                                 ids.push(rows[i].id);
                             }
                             $.post(
-                                     "admin.php?r=articleclass/articleclassdelete",
+                                     "articleclassdelete",
                                      {
                                         ids:ids.join(',')
                                      },
@@ -72,7 +72,7 @@
                         handler: function () {
                             $('#btnexport').linkbutton('enable');
                             $.post(
-                                    "admin.php?r=articleclass/articleclassexport",
+                                    "articleclassexport",
                                     {},
                                     function (data){
 
@@ -99,7 +99,7 @@
             //分类添加方法
             $(".submit").click(function(){
                     $.post(
-                            "admin.php?r=articleclass/articleclassadd",
+                            "articleclassadd",
                             {
                                 classname:$("#classname1").val()
                             },
@@ -124,7 +124,7 @@
              $(".modifysubmit").click(function(){
 
                     $.post(
-                             "admin.php?r=articleclass/articleclassmodify",
+                             "articleclassmodify",
                              {
                                 id:$("#id").val(),
                                 classname:$("#classname").val()

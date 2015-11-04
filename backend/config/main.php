@@ -32,6 +32,18 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
+        'urlManager' => [
+
+                'enablePrettyUrl' => true,
+                'showScriptName' => false,
+                'rules' => [
+                             'test/<id:\d+>.html' => 'test/articlelist',
+                             'article/<id:\d+>.html' => 'article/articledetail',
+                             'database/tabcolumninfos/<tableName:\w+>' => 'database/tabcolumninfos',
+                             'database/tabinfos/<tableName:\w+>' => 'database/tabinfos',
+                             'task/<id:\d+>' => 'task/taskdownload',
+                           ]
+        ],
     ],
     'params' => $params,
 ];

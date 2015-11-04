@@ -154,7 +154,7 @@ class BaseActiveRecord extends ActiveRecord{
 				return false;
 			}
 			else{
-						$connection = \Yii::$app->db;
+						$connection = static::getDb();
 						$len 		= count($ids);
 						$SQL 		= 'DELETE FROM '.$tableName.' WHERE id in (';
 						for ($i = 0; $i<$len;$i++) {

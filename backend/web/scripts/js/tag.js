@@ -7,7 +7,7 @@
                 autoRowHeight: false,
                 border:true,
                 collapsible:true,
-                url:"admin.php?r=tag/taglistjson", //服务器地址,返回json格式数据
+                url:"taglistjson", //服务器地址,返回json格式数据
                 loadMsg:'正在加载数据...',
                 frozenColumns:[[
                     {   field:'ck',
@@ -48,7 +48,7 @@
                                     if(r){
                                         $.post(
 
-                                                "admin.php?r=tag/tagdelete",
+                                                "tagdelete",
                                                 {
                                                     ids:ids.join(',')
                                                 },
@@ -87,7 +87,7 @@
                         handler: function () {
                             $('#btnsave').linkbutton('enable');
                             $.post(
-                                    "admin.php?r=tag/tagexport",
+                                    "tagexport",
                                     {},
                                     function (data){
 
@@ -116,7 +116,7 @@
             $(".submit").click(function(){
 
                $.post(
-                        "admin.php?r=tag/tagadd",
+                        "tagadd",
                         {
                             tagname:$("#tagname1").val()
                         },
@@ -149,7 +149,7 @@
             $(".modifysubmit").click(function(){
             		//$.messager.alert('消息','ok');
                     $.post(
-                             "admin.php?r=tag/tagmodify",
+                             "tagmodify",
                              {
                                 id:$("#id").val(),
                                 tagname:$("#tagname").val()

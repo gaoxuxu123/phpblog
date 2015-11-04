@@ -49,7 +49,7 @@ AppAsset::addCss($this,WEBPATH.'/scripts/js/shCoreEclipse.css');
     </thead>
 </table>
 <div id="openRoleDiv" class="easyui-window" closed="true" iconCls="icon-add" collapsible="false" modal="true" title="文章添加" style="width:1200px;height:850px;">
-    <iframe scrolling="auto" id='openIframe' frameborder="0"  src="<?php  echo Url::toRoute('article/addarticle') ?>" style="width:100%;height:800px;"></iframe>
+    <iframe scrolling="auto" id='openIframe' frameborder="0"  src="<?php  echo Url::toRoute('admin.php/article/addarticle') ?>" style="width:100%;height:800px;"></iframe>
 </div>
 
   <?php $this->endBody() ?>
